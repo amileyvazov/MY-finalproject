@@ -5,39 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/learnteach.png" type="image/x-icon">
-    <title>Login Acount</title>
+    <title>Register Acount</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--  Sass css-->
-
+    <link rel="stylesheet" href="./assets/scss/regis.css">
+    <link rel="stylesheet" href="./assets/scss/regis.css.map">
 </head>
 <body>
     <main>
         <div class="container">
             <div class="row">
-              <div class="logo col-6">
-                <div class="sec-head">
-                    <img src="./img/learnteach.png" alt="">
-                    <a href=""></a>
+              <div class="logo-reg col-6">
+                <div class="sec-head d-flex">
+                    <img class="w-25"  src="./img/learnteach.png" alt="">
+                    <a href="">Login</a>
                 </div>
                 <div class="sec-body">
-                    <img src="./img/img-student-2.png" alt="">
+                    <img class="w-75" src="./img/img-student-2.png" alt="">
                 </div>
                 <div class="sec-foot">
-                    <a href=""></a>
+                    <a href="">Back To Home</a>
                 </div>
               </div>
               <div class="sec-item text-center col-6">
                 <div class="sec-hed-login">
-                    <h2></h2>
-                    <h5></h5>
+                    <h2>Sign up</h2>
+                    <h5>Sign into your pages account</h5>
                 </div>
                 <div class="login-body">
                     <div class="body-item">
-                        <h2>Email</h2>
+                        <h2>Student Name</h2>
                         <input type="text">
+
+                    </div>
+                    <div class="body-item">
+                        <h2>Student Surname</h2>
+                        <input type="text">
+
+                    </div>
+                    <div class="body-item">
+                        <h2>Confim password</h2>
+                        <input type="password">
 
                     </div>
                     <div class="body-item">
@@ -45,14 +56,14 @@
                         <input type="password">
 
                     </div>
-                    <div class="body-item d-flex">
+                    <div class="body-item">
                         <input type="checkbox">
                         <label for="">Remember Me</label>
                         <a href="">Fogot password</a>
 
                     </div>
-                    <div class="login-btn">
-                        <button>Login</button>
+                    <div class="register-btn">
+                        <button>Register</button>
                     </div>
                 </div>
               </div>
