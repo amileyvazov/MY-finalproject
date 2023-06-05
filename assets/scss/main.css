@@ -1,0 +1,13 @@
+.card-item {
+  border: 1px solid #000;
+  margin: 10px;
+  padding-top: 50px;
+}
+.card-item h2 {
+  font-size: 150%;
+  padding: 10px 0;
+}
+.card-item p {
+  font-size: 100%;
+  padding: 10px 0;
+}/*# sourceMappingURL=main.css.map */
