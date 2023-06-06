@@ -23,7 +23,7 @@
                 <div id="nav" class="row justify-content-between ">
                     <div class="col-md-2 justify-content-center px-5">
                         <div class="logo">
-                            <a href="">
+                            <a href="home.html">
                                 <img src="./img/learnteach.png" alt="">
                             </a>
                         </div>
@@ -64,24 +64,25 @@
                     </nav>
                     <div class="col-md-3 item d-flex justify-content-start">
                         <div class="icons d-flex">
-                            <div class="menu-btn col-3 px-4">
-                              <div class="btn-line"></div>
-                              <div class="btn-line"></div>
-                              <div class="btn-line"></div>
+                            <div class="col-3 px-4">
+                                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                             </div>
                             <div class="col-3 px-4">
-                               <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                            </div>
-                            <div class="col-3 px-4">
-                               <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                                <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
                             </div>
                         </div>
                         <div class="singup">
                             <a href="">SingUp</a>
                         </div>
-    
+                        <div class="menu-btn col-3 px-5">
+                          <div class="btn-line"></div>
+                          <div class="btn-line"></div>
+                          <div class="btn-line"></div>
+                        </div>
+                        
                     </div>
                 </div>
+
                 <div class="head-section d-flex">
     
                     <div class="head-text col-7">
@@ -123,6 +124,7 @@
                     </div>
                 </div>
             </div>
+
         </header>
         <main>
         <section>
@@ -177,7 +179,7 @@
                         <h5>Our Top Courses</h5>
                         <h2>Learn Best Things</h2>
                         </div>
-                        <div class="sec-body">
+                        <div class="sec-body1 d-flex m-5">
                             <div class="col-3">
                                 <div class="item">
                                     <span></span>
@@ -206,36 +208,60 @@
 
                                 </div>
                             </div>
+                        </div>
+                        <div class="sec-body2 d-flex m-5">
+
                             <div class="col-3">
                                 <div class="item">
                                     <span></span>
                                     <h2>Geometry & Maths</h2>
-
+    
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="item">
                                     <span></span>
                                     <h2>Micro Biology</h2>
-
+    
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="item">
                                     <span></span>
                                     <h2>Music & Art</h2>
-
+    
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="item">
                                     <span></span>
                                     <h2>Physics</h2>
-
+    
                                 </div>
                             </div>
                         </div>
+                        <div class="sec-btn">
+                            <a href="">
+                                <span> View All Courses</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="card-sec">
+            <div class="container">
+                <div class="row ">
+                   <div class="col-12">
+                       <div class="sec-head text-center m-5">
+                           <h4>Wacth New Courses</h4>
+                           <h2>Crated New Courses</h2>
+                       </div>
+                   </div>
+
+                </div>
+                <div class="col-12 text-center">
+                  <a href="" class="card-btn">More</a>
                 </div>
             </div>
         </section>
@@ -244,6 +270,38 @@
     
         </footer>
 
-    
+        <!--javascript tags  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            function getDataBase(){
+                fetch('https://64709d593de51400f7249cf4.mockapi.io/apilication/json/item')
+                .then(res=>res.json())
+                .then(data =>{
+                    data.forEach(el => {
+                        const rowCard=document.querySelector('#card-sec .row')
+                       rowCard.innerHTML +=`
+                       <div class="col-5 m-5">
+                         <div class="card-img"><img src="${el.avatar}" alt=""></div>
+                         <div class="card-body">
+                           <div class="card-text">
+                            <h2>${el.name}<h2>
+                            <p>${el.text}<p>
+                            </div>
+                           <div class="card-foot d-flex justify-content-between">
+                            <div class="card-price">
+                                <span>$${el.price}</span>
+                            </div>
+                            <div class="cars-btn d-flex justify-content-end">
+                            <a>Add to Card</a>
+                            </div>
+                           </div>
+                          </div>
+                       </div>
+                       ` 
+                    });
+                })
+                .catch(err=> console.log(err))
+            } getDataBase()
+        </script>
     </body>
 </html>

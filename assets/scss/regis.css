@@ -2,3 +2,26 @@
     background-color: #0a0ef8;
     
 }
+.sec-head{
+    margin-top: 5%;
+}
+.sec-head img{
+    width: 100px;
+    height: 80%;
+    padding: 2%;
+    
+}
+.sec-head a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+    background-color: yellow;
+    height: 10%;
+    margin: 15px;
+    position:absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+}

@@ -163,4 +163,18 @@ header {
 .hed-sec a i {
   font-size: 160%;
   color: #fff;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+}
+.menu ul li {
+  border-bottom: 1px solid #fff;
+  list-style: none;
+}
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=header.css.map */

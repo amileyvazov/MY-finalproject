@@ -49,18 +49,38 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="search1 col-4">
-                        <label for="">StudentName</label>
-                        <input type="text" placeholder="StudentName ">
-                    </div>
-                    <div class="search2 col-4">
-                        <label for="">Student SurName</label>
-                        <input type="text" placeholder="Student SurName ">
-                    </div>
-                    <div class="search3-btn col-4">
-                        <button>Search</button>
-                        <button>Student Add</button>
-                        <button>Student Resert</button>
+                    <div class="sec-post-update m-3">
+                        <div class="col-12 text-center">
+                            <h6>New Post Crate</h6>
+                            <h2>Post Crate</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-3">
+                                <label for="input">Cours Image</label>
+                                <input id="avatar"  type="text">
+
+                            </div>
+                            <div class="col-3">
+                                <label for="input">Cours Name</label>
+                                <input id="name"   type="text">
+
+                            </div>
+                            <div class="col-3">
+                                <label for="input">Cours text</label>
+                                <input id="text"  type="text">
+
+                            </div>
+                            <div class="col-3">
+                                <label for="input">Cours Price</label>
+                                <input id="price"  type="text">
+
+                            </div>
+                            <div class="col-12 text-center d-flex justify-content-between p-4">
+                                <button id="add">Crate</button>
+                                <button id="edit">Edit</button>
+                                <button id="delete">Delete</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,6 +88,34 @@
         <section>
             <div class="container">
                 <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>My Crated Book</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Student list</h2>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <div class="search1 col-4">
+                            <label for="">StudentName</label>
+                            <input type="text" placeholder="StudentName ">
+                        </div>
+                        <div class="search2 col-4">
+                            <label for="">Student SurName</label>
+                            <input type="text" placeholder="Student SurName ">
+                        </div>
+                        <div class="search3-btn col-4">
+                            <button>Student Search</button>
+                            <button>Student Add</button>
+                            <button>Student Remove</button>
+                        </div>
+                    </div>
                     <div class="page-body col-10 text-center">
                         <table class="table">
                             <thead>
@@ -75,10 +123,9 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Student Name</th>
                                 <th scope="col">Surname</th>
-                                <th scope="col">Semestr</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Status</th>
-                                <th scope="col"></th>
+                                <th scope="col">Cours Name</th>
+                                <th scope="col">Student email</th>
+                                <th scope="col">Course Review History</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -86,25 +133,25 @@
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
+                                <td></td>
                                 <td>@mdo</td>
                                 <td>02/07/23</td>
-                                <td></td>
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
+                                <td></td>
                                 <td>@fat</td>
                                 <td>02/07/23</td>
-                                <td></td>
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
                                 <td>Ceson</td>
                                 <td>Birdy</td>
+                                <td></td>
                                 <td>@twitter</td>
                                 <td>02/07/23</td>
-                                <td></td>
                               </tr>
                             </tbody>
                           </table>
@@ -114,5 +161,53 @@
         </section>
     </main>
     <footer></footer>
+
+    <!-- javascript tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+     const add=document.getElementById('add')
+     add.addEventListener('click',()=>{
+        fetch('https://64709d593de51400f7249cf4.mockapi.io/apilication/json/item',{
+            method:"POST",
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({
+                avatar:document.querySelector('#avatar').value,
+                name:document.querySelector('#name').value,
+                text:document.querySelector('#text').value,
+                price:document.querySelector('#price').value 
+            })
+        })
+        .then(res=>console.log(res.json()))
+        .then(res =>{
+                if (res.ok) {
+                    successAlert('Müvəffəqiyyətlə əlavə olundu!')
+                    document.querySelector('#avater').value = '';
+                    document.querySelector('#name').value = '';
+                    document.querySelector('#text').value = '';
+                    document.querySelector('#price').value = '';
+
+                }
+                else{
+                    errorAlert('Bir xəta baş verdi!')
+                }
+            })
+        .catch(err=>console.log(err))
+
+     })
+    // fetch edit
+
+    
+    const edit=document.getElementById('edit')
+    edit.addEventListener('click',()=>{
+        fetch('https://64709d593de51400f7249cf4.mockapi.io/apilication/json/item',{
+            method:'PUT',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+    })
+    </script>
 </body>
 </html>
