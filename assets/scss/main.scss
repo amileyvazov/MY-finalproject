@@ -12,3 +12,28 @@
       padding: 10px 0;
     }
 }
+.owl-carousel{
+  .item{
+    height: 500px !important;
+  }
+
+}
+footer{
+  background: linear-gradient(rgb(33,2,2,.5),rgb(22,22,22,.5)),  #220558;
+  
+  li{
+    list-style: none;
+  }
+  a{
+    font-size: 90%;
+    text-decoration: none;
+    color: #fff;
+    && :hover{
+      color: #0a0ef8;
+    }
+  }
+  h2{
+    text-align: center;
+    font-size: 150%;
+  }
+}

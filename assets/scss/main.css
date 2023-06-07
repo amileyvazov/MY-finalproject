@@ -10,4 +10,25 @@
 .card-item p {
   font-size: 100%;
   padding: 10px 0;
+}
+
+.owl-carousel .item {
+  height: 500px !important;
+}
+
+footer {
+  background-color: #8cdf2d;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  font-size: 190%;
+  margin: 0 5%;
+  text-decoration: none;
+  color: #fff;
+}
+footer h2 {
+  text-align: center;
+  font-size: 150%;
 }/*# sourceMappingURL=main.css.map */
