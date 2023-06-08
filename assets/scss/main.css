@@ -1,6 +1,5 @@
 .card-item {
   border: 1px solid #000;
-  margin: 10px;
   padding-top: 50px;
 }
 .card-item h2 {
@@ -17,18 +16,42 @@
 }
 
 footer {
-  background-color: #8cdf2d;
+  background-color: #200355;
+}
+footer .logo img {
+  width: 60% !important;
+  border-radius: 20%;
 }
 footer li {
   list-style: none;
 }
 footer a {
-  font-size: 190%;
-  margin: 0 5%;
+  font-size: 150%;
+  padding: 10px;
   text-decoration: none;
   color: #fff;
 }
 footer h2 {
-  text-align: center;
   font-size: 150%;
+  padding: 10px;
+  font-weight: 500;
+}
+footer p {
+  font-size: 130%;
+  font-weight: 600;
+}
+
+.foot-sec {
+  border: 1px solid #fff;
+}
+
+.card {
+  margin: 5%;
+}
+
+.card-text h2 {
+  font-size: 150%;
+}
+.card-text p {
+  font-size: 50%;
 }/*# sourceMappingURL=main.css.map */

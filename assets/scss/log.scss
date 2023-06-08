@@ -1,0 +1,70 @@
+.logo-log{
+    background-size: cover;
+    height: 100vh;
+    background:linear-gradient(rgba(28, 7, 212, 0.5),rgba(46,7,210,.5)), url(https://e0.pxfuel.com/wallpapers/667/98/desktop-wallpaper-login-background-outlook-login.jpg);
+    .sec-head{
+        
+        img{
+            border-radius: 25%;
+            padding: 5%
+        };
+        a{
+            text-decoration: none;
+            color:#fff;
+            text-align: center;
+            font-size: 120%;
+            margin: 10% 0;
+            border: 1px solid #fff;
+            padding: 2%;
+            border-radius: 40%;
+        }
+    }
+    .sec-body{
+
+        img{
+            border-radius: 40%;
+            padding: 3%;
+            border: 1px solid #fff;
+        }
+    }
+    .sec-foot{
+        a{
+            text-decoration: none;
+            color:#fff;
+            text-align: center;
+            font-size: 120%;
+            margin: 50% 0;
+            border: 1px solid #fff;
+            padding: 2%;
+            border-radius: 40%; 
+        }
+    }
+  
+}
+.log-item{
+    .sec-hed-login{
+        h2{
+            font-size: 180%;
+            font-weight: 500;
+        }
+        h5{
+          font-size: 190%;
+        }
+    }
+    .body-item{
+       
+        input{
+            border-radius: 5%;
+        }
+        a{
+            border-radius: 10%;
+            padding: 10px;
+            background-color: rgba(11, 7, 252, 0.918);
+            border: 1px solid #fff;
+            color: #000;
+            text-decoration: none;
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
