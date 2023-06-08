@@ -1,13 +1,19 @@
-$homecolor:(#0a0ef8);
+$homecolor:(#0a0ef8f8);
 $text-color:(#fff);
 $text-family:(Arial, Helvetica, sans-serif);
 $fon-color:( rgb(255, 251, 17));
 header{
-    background-color:$homecolor;
+
+    background:linear-gradient(rgba(128, 127, 127, 0.329),rgba(143, 141, 141, 0.541)) $homecolor ;
     width: 100%;
     height: 100vh;
     overflow:hidden;
     
+}
+#nav-bar{
+    z-index: 999;
+    position: fixed;
+    background:linear-gradient(rgba(143, 141, 141, 0.329),rgba(143, 141, 141, 0.356)) $homecolor;
 }
 #nav{
     padding-top: 2%;
@@ -144,13 +150,13 @@ header{
     width: 65%;
     position: relative;
     padding: 14px 12px;
-    border-radius: 25%;
-    box-shadow: none;
+    border-radius: 10%;
+    box-shadow: $homecolor;
  }
  a{
     text-decoration: none;
-    border: 1px solid $homecolor;
-    background-color: $homecolor;
+    border: 1px solid $fon-color;
+    background-color: $fon-color;
     font-size: 100%;
     font-family: $text-family;
     font-weight: 600;
@@ -159,12 +165,10 @@ header{
     width: 25%;
     text-align: center;
     color: $text-color;
-    background-color: #000;
     justify-content: center;
     padding: 15px 5px;
     margin-left: 5px;
-    border-radius: 20%;
-    background-color:$fon-color;
+    border-radius: 40%;
  }
 }
 .btn-line{

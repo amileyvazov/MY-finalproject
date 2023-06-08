@@ -1,3 +1,7 @@
+body{
+  background-clip:inherit;
+  background: linear-gradient(rgba(182, 182, 182, 0.5),rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+}
 .card-item{
     border: 1px solid #000;
     padding-top: 50px;
@@ -13,7 +17,24 @@
 }
 .owl-carousel{
   .item{
+    border: 1px solid #fff;
+    background-color: #0728e41e;
+    border-radius: 20% !important;
+    color: #fff;
     height: 500px !important;
+    img{
+      padding: 10%;
+    }
+  }
+  .owl-dots{
+    .owl-dot{
+      span{
+        background-color: #dcf309 !important;
+      }
+    
+    }
+  
+  
   }
 
 }
