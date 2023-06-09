@@ -1,27 +1,5 @@
-.logo-reg{
-    background-color: #0a0ef8;
-    
-}
-.sec-head{
-    margin-top: 5%;
-}
-.sec-head img{
-    width: 100px;
-    height: 80%;
-    padding: 2%;
-    
-}
-.sec-head a{
-    text-decoration: none;
-    padding: 10px;
-    font-size: 25px;
-    color: #fff;
-    background-color: yellow;
-    height: 10%;
-    margin: 15px;
-    position:absolute;
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-end;
-
-}
+body {
+  scroll-behavior: smooth;
+  background-clip: inherit;
+  background: linear-gradient(rgba(182, 182, 182, 0.5), rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+}/*# sourceMappingURL=regis.css.map */

@@ -1,0 +1,58 @@
+body {
+  background-clip: inherit;
+  background: linear-gradient(rgba(182, 182, 182, 0.5), rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+}
+
+.list-nav {
+  background-color: #fff;
+  border-right: 1px solid #000;
+  height: 100%;
+}
+.list-nav .logo {
+  width: 60%;
+}
+
+.catagory li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  border: 1px solid #000;
+  list-style: none;
+  margin: 5rem 0 0 0;
+}
+.catagory li a {
+  padding: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #200355;
+}
+footer .logo img {
+  width: 60% !important;
+  border-radius: 20%;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  font-size: 150%;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+footer h2 {
+  font-size: 150%;
+  padding: 10px;
+  font-weight: 500;
+}
+footer p {
+  font-size: 130%;
+  font-weight: 600;
+}
+
+.foot-sec {
+  border: 1px solid #fff;
+}/*# sourceMappingURL=tec.css.map */

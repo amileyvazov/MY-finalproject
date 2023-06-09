@@ -209,5 +209,35 @@
     </div>
    </footer>
 
+
+   <!-- Js tags  -->
+   <!-- javascript tags -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="module">
+       // Import the functions you need from the SDKs you need
+       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+       // TODO: Add SDKs for Firebase products that you want to use
+       // https://firebase.google.com/docs/web/setup#available-libraries
+     
+       // Your web app's Firebase configuration
+       const firebaseConfig = {
+         apiKey: "AIzaSyC2pFMNIxh4wEXSRYZSI71VNQRiIAylPsI",
+         authDomain: "myproject-161de.firebaseapp.com",
+         databaseURL: "https://myproject-161de-default-rtdb.firebaseio.com",
+         projectId: "myproject-161de",
+         storageBucket: "myproject-161de.appspot.com",
+         messagingSenderId: "139905651745",
+         appId: "1:139905651745:web:7ea3788ada21e9d8993f60"
+       };
+     
+       // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+
+
+       import{ getDatabase, ref, set , update, remove, get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+       const db=getDatabase()
+       
+
+    </script>
 </body>
 </html>

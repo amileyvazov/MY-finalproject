@@ -1,70 +1,40 @@
-
 body{
+    background-clip:inherit;
     background: linear-gradient(rgba(182, 182, 182, 0.5),rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
-} 
-#nav-head{
-    border: 1px solid #fff;
-    background-color: #0a0ef8f8;
+  }
+.list-nav{
+    background-color: opacity($color: #fff 100%) ;
+    border-right: 1px solid #000;
+    height: 100%;
 
+ .logo{
+    width: 60%;
+ }
 }
-#nav-bar{
-    z-index: 999;
-    position: fixed;
-    
-}
- 
-.logo{
-    img{
-        padding: 5% 10%;
-        border-radius: 25%;
-        width: 50%;
-        height: 50%;
-
-    }
-}
-#nav-item{
-    margin: 10px;
+.catagory{
     li{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+        border: 1px solid #000;
         list-style: none;
+        margin: 5rem 0 0 0; 
         a{
+            padding: 1rem;
+           font-size: .5rem;
             text-decoration: none;
-            color: #fff;
-            font-size: 150%;
-            font-weight: 500;
-            margin: 30% 0;
         }
     }
 }
-#icon{
-    a{
-        color: #fff;
-        padding: 10px ;
-        font-size: 200%;
-    }
-}
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
     background-color: #200355;
-    .logo-foot{
+    .logo{
       img{
         width: 60% !important;
         border-radius: 20%;
       }
     }
-    p{
-        font-size: 130%;
-        font-weight: 600;
-    }
-    
-    
-    
-}
-.foot-item{
-
     li{
       list-style: none;
     }
@@ -79,7 +49,12 @@ footer{
       padding: 10px;
       font-weight: 500;
     }
-}
-.foot-sec{
+    p{
+      font-size: 130%;
+      font-weight: 600;
+    }
+  
+  }
+  .foot-sec{
     border: 1px solid #fff;
-}
+  }
