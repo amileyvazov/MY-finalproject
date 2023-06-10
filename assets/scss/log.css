@@ -1,55 +1,5 @@
-.logo-log {
-  background-size: cover;
-  height: 100vh;
-  background: linear-gradient(rgba(28, 7, 212, 0.5), rgba(46, 7, 210, 0.5)), url(https://e0.pxfuel.com/wallpapers/667/98/desktop-wallpaper-login-background-outlook-login.jpg);
-}
-.logo-log .sec-head img {
-  border-radius: 25%;
-  padding: 5%;
-}
-.logo-log .sec-head a {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  font-size: 120%;
-  margin: 10% 0;
-  border: 1px solid #fff;
-  padding: 2%;
-  border-radius: 40%;
-}
-.logo-log .sec-body img {
-  border-radius: 40%;
-  padding: 3%;
-  border: 1px solid #fff;
-}
-.logo-log .sec-foot a {
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  font-size: 120%;
-  margin: 50% 0;
-  border: 1px solid #fff;
-  padding: 2%;
-  border-radius: 40%;
-}
-
-.log-item .sec-hed-login h2 {
-  font-size: 180%;
-  font-weight: 500;
-}
-.log-item .sec-hed-login h5 {
-  font-size: 190%;
-}
-.log-item .body-item input {
-  border-radius: 5%;
-}
-.log-item .body-item a {
-  border-radius: 10%;
-  padding: 10px;
-  background-color: rgba(11, 7, 252, 0.918);
-  border: 1px solid #fff;
-  color: #000;
-  text-decoration: none;
-  display: flex;
-  justify-content: end;
+body {
+  scroll-behavior: smooth;
+  background-clip: inherit;
+  background: linear-gradient(rgba(182, 182, 182, 0.5), rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
 }/*# sourceMappingURL=log.css.map */

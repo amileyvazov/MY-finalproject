@@ -14,182 +14,168 @@
     <link rel="stylesheet" href="./assets/scss/tec.css">
     <link rel="stylesheet" href="./assets/scss/tec.css.map">
 </head>
-<body class="row">
-    <header class="col-2">
-        <div class="container-fluid h-100">
-            <div class="row">
-                <div class="list-nav col-12">
-                    <div class="logo col-5 text-center m-5">
-                        <img class="w-100" src="./img/learnteach.png" alt="">
+<body >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <header>
+                    <div class="row">
+                        <div class="list-nav col-12">
+                            <div class="logo col-5 text-center m-5">
+                                <img class="w-100" src="./img/learnteach.png" alt="">
+                            </div>
+                            <div class="catagory col-xl-12 col-sm-12 col-lg-12 mt-4">
+                                <ul>
+                                    <li>
+                                        <a href="">Mənim acountum</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Yaratdığım postlar</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Yaratdiğım kurslar</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Yaratdığım kitablar</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Mənim Haqqımda</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+        
                     </div>
-                    <div class="catagory col-xl-12 col-sm-12 col-lg-12 mt-4">
-                        <ul>
-                            <li>
-                                <a href="">Mənim acountum</a>
-                            </li>
-                            <li>
-                                <a href="">Yaratdığım postlar</a>
-                            </li>
-                            <li>
-                                <a href="">Yaratdiğım kurslar</a>
-                            </li>
-                            <li>
-                                <a href="">Yaratdığım kitablar</a>
-                            </li>
-                            <li>
-                                <a href="">Mənim Haqqımda</a>
-                            </li>
-                        </ul>
+                </header>
+            </div>
+            <div class="col-9">
+                <main>
+                 <section>
+                    <div class="row">
+                        <div class="sec-post-update my-3">
+                            <div class="col-xl-12 col-sm-12 col-lg-12 text-center my-5">
+                                <h6>Yeni bir</h6>
+                                <h2>Kurs yaradın</h2>
+                            </div>
+                            <div class="col-xl-12 col-sm-12 col-lg-12 my-5">
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
+                                    <label for="input">Kursun şəkili</label>
+                                    <input id="avatar"  type="text">
+    
+                                </div>
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
+                                    <label for="input">Kursun Adı</label>
+                                    <input id="name"   type="text">
+    
+                                </div>
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
+                                    <label for="input">Kursun məzmunu</label>
+                                    <input id="text"  type="text">
+    
+                                </div>
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
+                                    <label for="input">Kursun qiyməti</label>
+                                    <input id="price"  type="text">
+    
+                                </div>
+                                <div class="my-4 col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
+                                    <button id="add" class="btn-warning w-100">Yarat</button>
+                                    <button id="edit" class="btn-primary w-100">Yenilə</button>
+                                    <button id="delete" class="btn-danger w-100">Sil</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                 </section>
+                 <section>
+                    <div class="row my-5">
+                        <div class="col-xl-12 col-sm-12 col-lg-12 text-center">
+                            <h5>Mənim yaradacağım </h5>
+                            <h2>Kitablar</h2>
+                        </div>
+                        <div class="col-xl-12 col-sm-12 col-lg-12 ">
+                            <div class=" d-flex">
+                                <label for="input">Kitab şəkilini yüklə</label>
+                                <input id="book-avatar"  type="text">
+    
+                            </div>
+                            <div class=" d-flex">
+                                <label for="input">Kitabın adı</label>
+                                <input id="book-name"   type="text">
+    
+                            </div>
+                            <div class=" d-flex">
+                                <label for="input">Kitabın məzmunu</label>
+                                <input id="book-text"  type="text">
+    
+                            </div>
+                            <div class=" d-flex">
+                                <label for="input">Kitabın qiyməti</label>
+                                <input id="book-price"  type="text">
+    
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-12 col-sm-12 col-lg-12">
+                        <div class="col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
+                            <button id="book-add" class="btn-warning w-100">Yarat</button>
+                            <button id="book-edit" class="btn-primary w-100">Yenilə</button>
+                            <button id="book-delete" class="btn-danger w-100">Sil</button>
+                        </div>
+                    </div>
+                 </section>
+                  <section>
+                    <div class="row">
+                        <div class="col-xl-12 col-sm-12 col-lg-12 text-center">
+                           <h4>Kursalrı izləyən </h4>
+                            <h2>Tələbə siyahısı</h2>
+                        </div>
+                        <div class="page-body col-xl-10 col-sm-10 col-lg-10 text-center">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tələbələri Adları</th>
+                                    <th scope="col">İzlədiyi Kurs</th>
+                                    <th scope="col">Tələbələrin emaili</th>
+                                    <th scope="col">Kursu izlədi son tarix</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Mikro-biologiya</td>
+                                    <td>@mdo</td>
+                                    <td>02/07/23</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Kimyanın əsasları</td>
+                                    <td>@fat</td>
+                                    <td>02/07/23</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Ceson</td>
+                                    <td>Riyaziyyatın əsasları</td>
+                                    <td>@twitter</td>
+                                    <td>02/07/23</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                  </section>
+                  <section>
 
+                  </section>
+                </main>
             </div>
         </div>
-    </header>
-    <main class="col-xl-10 col-sm-10 col-lg-10">
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="sec-post-update m-3">
-                        <div class="col-12 text-center">
-                            <h6>New Post Crate</h6>
-                            <h2>Post Crate</h2>
-                        </div>
-                        <div class="col-xl-12 col-sm-12 col-lg-12">
-                            <div class="col-xl-3 col-sm-3 col-lg-3">
-                                <label for="input">Cours Image</label>
-                                <input id="avatar"  type="text">
-
-                            </div>
-                            <div class="col-xl-3 col-sm-3 col-lg-3">
-                                <label for="input">Cours Name</label>
-                                <input id="name"   type="text">
-
-                            </div>
-                            <div class="col-xl-3 col-sm-3 col-lg-3">
-                                <label for="input">Cours text</label>
-                                <input id="text"  type="text">
-
-                            </div>
-                            <div class="col-xl-3 col-sm-3 col-lg-3">
-                                <label for="input">Cours Price</label>
-                                <input id="price"  type="text">
-
-                            </div>
-                            <div class="col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
-                                <button id="add" class="btn-warning w-100">Crate</button>
-                                <button id="edit" class="btn-primary w-100">Edit</button>
-                                <button id="delete" class="btn-danger w-100">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-12 text-center">
-                        <h2>My Crated Book</h2>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="col-3">
-                            <label for="input">Kitab şəkilini yüklə</label>
-                            <input id="book-avatar"  type="text">
-
-                        </div>
-                        <div class="col-3">
-                            <label for="input">Kitabın adı</label>
-                            <input id="book-name"   type="text">
-
-                        </div>
-                        <div class="col-3">
-                            <label for="input">Kitabın məzmunu</label>
-                            <input id="book-text"  type="text">
-
-                        </div>
-                        <div class="col-3">
-                            <label for="input">Kitabın qiyməti</label>
-                            <input id="book-price"  type="text">
-
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-12">
-                    <div class="col-12 text-center d-flex justify-content-between p-4">
-                        <button id="book-add" class="btn-warning w-100">Crate</button>
-                        <button id="book-edit" class="btn-primary w-100">Edit</button>
-                        <button id="book-delete" class="btn-danger w-100">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h2>Student list</h2>
-                    </div>
-                    <div class="col-12 d-flex">
-                        <div class="search1 col-4">
-                            <label for="">StudentName</label>
-                            <input type="text" placeholder="StudentName ">
-                        </div>
-                        <div class="search2 col-4">
-                            <label for="">Student SurName</label>
-                            <input type="text" placeholder="Student SurName ">
-                        </div>
-                        <div class="search3-btn col-4">
-                            <button>Student Search</button>
-                            <button>Student Add</button>
-                            <button>Student Remove</button>
-                        </div>
-                    </div>
-                    <div class="page-body col-10 text-center">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Student Name</th>
-                                <th scope="col">Surname</th>
-                                <th scope="col">Cours Name</th>
-                                <th scope="col">Student email</th>
-                                <th scope="col">Course Review History</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td></td>
-                                <td>@mdo</td>
-                                <td>02/07/23</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td></td>
-                                <td>@fat</td>
-                                <td>02/07/23</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Ceson</td>
-                                <td>Birdy</td>
-                                <td></td>
-                                <td>@twitter</td>
-                                <td>02/07/23</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    </div>
     <footer class="col-12">
         <div class="container-fluid text-white">
            <div class="row">

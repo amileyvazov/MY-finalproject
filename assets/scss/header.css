@@ -132,8 +132,8 @@ header {
   width: 65%;
   position: relative;
   padding: 14px 12px;
-  border-radius: 10%;
-  box-shadow: rgba(10, 14, 248, 0.9725490196);
+  border-radius: 25%;
+  border: none;
 }
 .inp a {
   text-decoration: none;

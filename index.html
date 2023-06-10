@@ -71,20 +71,20 @@
         <div class="container">
             <div class="row mt-5">
              <div class="col-xl-5 col-lg-5 col-sm-5 ">
-                <form >
-                    <select name="orderby" class="orderby select2-hidden-accessible" aria-label="Shop order" data-select2-id="select2-data-1-kxl2" tabindex="-1" aria-hidden="true">
-                        <option value="menu_order" selected="selected" data-select2-id="select2-data-3-mxc7">Varsayılan çeşidləmə</option>
-                        <option value="popularity">Populyarlığa görə sırala</option>
-                        <option value="rating">Orta reytinqə görə sırala</option>
-                        <option value="date">Ən son versiyaya görə sırala</option>
-                        <option value="price">Qiymətə görə çeşidləmə: aşağıdan yüksəkə</option>
-                        <option value="price-desc">Qiymətə görə çeşidləmə: yüksəkdən aşağıya</option>
-                    </select><span class="select2 select2-container select2-container--default select2-container--focus" dir="ltr" data-select2-id="select2-data-2-vvcr" style="width: 220px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-orderby-p1-container" aria-controls="select2-orderby-p1-container"><span class="select2-selection__rendered" id="select2-orderby-p1-container" role="textbox" aria-readonly="true" title="Default sorting"></span>Varsayılan çeşidləmə<span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-              </form>
-
+             
              </div>
              <div class="col-xl-5 col-lg-5 col-sm-5 ">
-                <a href=""></a>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Varsayılan çeşidləmə</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Populyarlığa görə sırala</a></li>
+                      <li><a class="dropdown-item" href="#">Orta reytinqə görə sırala</a></li>
+                      <li><a class="dropdown-item" href="#">Ən son versiyaya görə sırala</a></li>
+                      <li><a class="dropdown-item" href="#">Qiymətə görə çeşidləmə: aşağıdan yüksəkə</a></li>
+                      <li><a class="dropdown-item" href="#">Qiymətə görə çeşidləmə: yüksəkdən aşağıya</a></li>
+                    </ul>
+                  </div>
              </div>
              <div class="col-xl-5 col-lg-5 col-sm-5 ">
                 <a href=""></a>
@@ -211,6 +211,8 @@
 
 
    <!-- Js tags  -->
+   <!-- Bootstrap5 js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <!-- javascript tags -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script type="module">
