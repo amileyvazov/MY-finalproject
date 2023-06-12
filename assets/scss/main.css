@@ -7,15 +7,28 @@ body {
 .card-item {
   box-shadow: 0.5px 5px 5px 10px rgba(7, 40, 228, 0.1176470588);
   border: 1px solid transparent;
+  border-radius: 10%;
   padding-top: 50px;
 }
 .card-item h2 {
-  font-size: 150%;
+  font-size: 1rem;
   padding: 10px 0;
 }
+.card-item a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgba(10, 14, 248, 0.9725490196);
+}
 .card-item p {
-  font-size: 100%;
-  padding: 10px 0;
+  font-size: 1rem;
+  padding: 5px 0;
+}
+.card-item:hover {
+  transition: 1s;
+  cursor: pointer;
+  color: rgba(222, 182, 2, 0.904);
 }
 
 .owl-carousel .item {
@@ -74,21 +87,171 @@ footer p {
 }
 
 .item-text {
-  height: 15rem;
+  height: 19rem;
+  width: 15rem;
   border: 1px solid transparent;
-  border-radius: 35%;
+  border-radius: 15%;
   box-shadow: 0.5px 5px 5px 10px rgba(7, 40, 228, 0.1176470588);
   margin: 0 5px;
   background-color: #fff;
 }
 .item-text span svg {
-  margin: 30px 3px;
+  margin: 50px 5px;
   border: 1px solid rgba(7, 40, 228, 0.1176470588);
   width: 5rem;
   height: 5rem;
 }
 .item-text h2 {
   margin: 15px 2px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+.sec-head1 h5 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.sec-head1 h5:hover {
+  color: rgba(222, 182, 2, 0.904);
+}
+.sec-head1 h2 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.sec-head1 h2:hover {
+  color: rgba(222, 182, 2, 0.904);
+}
+
+.sec-btn a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(10, 14, 248, 0.9725490196);
+}
+.sec-btn a:hover {
+  padding: 10px;
+  transition: 1s;
+  border: 2px solid rgba(222, 182, 2, 0.904);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.sec-head h4 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.sec-head h4:hover {
+  color: rgba(222, 182, 2, 0.904);
+}
+.sec-head h2 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.sec-head h2:hover {
+  color: rgba(222, 182, 2, 0.904);
+}
+
+::-moz-selection {
+  background-color: rgba(222, 182, 2, 0.904);
+}
+
+::selection {
+  background-color: rgba(222, 182, 2, 0.904);
+}
+
+.card {
+  border-radius: 5%;
+}
+.card .card-img img {
+  padding: 10px;
+  border-radius: 10%;
+}
+.card .card-body h2 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.card .card-body h2:hover {
+  color: rgba(222, 182, 2, 0.904);
+  transition: 1s;
+}
+.card .card-body p {
+  font-size: 0.6rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px0;
+}
+.card .card-body .card-foot .card-price {
+  padding: 10px;
+}
+.card .card-body .card-foot .card-price a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 15px;
+  color: #000;
+}
+.card .card-body .card-btn a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 25px;
+}
+.card .card-body .card-btn a:hover {
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 25px;
+  border-radius: 50%;
+  transition: 1s;
+  background-color: rgba(222, 182, 2, 0.904);
+}
+.card:hover {
+  background-color: rgba(10, 14, 248, 0.9725490196);
+  color: rgba(222, 182, 2, 0.904);
+  cursor: pointer;
+  transition: 1s;
+}
+.card:hover .card-btn a {
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 1px solid #fff;
+  padding: 25px;
+  border-radius: 50%;
+  transition: 1s;
+  background-color: rgba(222, 182, 2, 0.904);
+}
+.card:hover .card-foot .card-price a {
+  color: #fff;
+}
+
+.foot-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.foot-btn:hover {
+  padding: 10px;
+  font-size: 1.5rem;
+  transition: 1s;
+  border: 2px solid rgba(222, 182, 2, 0.904);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.video a {
+  text-align: center;
+}
+.video a svg {
+  position: absolute;
+  margin-top: 10%;
 }/*# sourceMappingURL=main.css.map */

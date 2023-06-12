@@ -1,209 +1,209 @@
 $homecolor:(#0a0ef8f8);
 $text-color:(#fff);
 $text-family:(Arial, Helvetica, sans-serif);
-$fon-color:( rgb(255, 251, 17));
-header{
+$fon-color:( rgb(222, 182, 2, 0.904) );
 
+header{
     background:linear-gradient(rgba(128, 127, 127, 0.329),rgba(143, 141, 141, 0.541)) $homecolor ;
     width: 100%;
     height: 100vh;
-    overflow:hidden;
+    
     
 }
 #nav-bar{
+    width: 100%;
+    padding-top: 5px;
     z-index: 999;
     position: fixed;
     background:linear-gradient(rgba(143, 141, 141, 0.329),rgba(143, 141, 141, 0.356)) $homecolor;
-}
-#nav{
-    padding-top: 2%;
-    height: 100px;
-    
-}
-.logo{
-    display: flex;
-    padding: 2%;
-    a{
-        i{
-            color: #fff;
-        }
-        img{
-            border: 1px solid $text-color;
-            height:70px;
-            width: 100%;
-            border-radius: 10%;
-        }
-    }
-}
-
-.animation{
-    .smal-circle{
-        position:absolute;
-        display: flex;
-        align-content: center;
-        z-index:1;
-        margin: 40px;
-        width: 70px;
-        height: 70px;
-        background-color:$fon-color;
-        border-radius: 50%;
-    }
-    .circle-2{
-        width: 100px;
-        padding: 50px;
-        border-radius: 50%;
-        height:100px;
-        border: 10px solid $fon-color;
-    }
-    .big-circle{
-        position:relative;
-        width: 500px;
-        height:600px;
-        z-index: 1;
-        align-items: center;
-        background-color: $fon-color;
-        border-radius: 50%;
-        margin-left: 50%;
-    }
-    
-}
-.head-img{
-    
-    a{
-        position:absolute; 
-        img{
-            display: flex;
-            align-items: end;
-            overflow: hidden;
-           height: 80vh;
-           width: 100%;
-        
-        }
-    }
-}
-#nav-item{
-     margin-top: 2%;
-    li{
-        list-style: none;
-        text-align: center;
-        a{
-            text-decoration: none;
-            color: $text-color;
-            margin: 10px;
-            font-size: 20px;
-            font-weight: 600;
-        }
-    }
-}
-.item{
-    height: 10px;
-    margin-right: 5%;
-    .singup{
-        a{
-            border: 3px solid $text-color;
-            padding: 15%;
-            border-radius: 40%;
-            text-decoration: none;
-            font-size: 25px;
-            font-weight: 600;
-            color: $text-color;
-        }
-    }
-    .icons{
-       
-        a{
-            
-            font-size: 30px;
-            color:$text-color;
-        }
-    }
-}
-.head-section{
-    margin-top: 5%;
-    .head-text{
-        h5{
-            font-size: 80%;
-            color: $text-color;
-            font-weight: 600;
-            font-family: $text-family;
-            padding: 1%;
-        }
-        h2{
-            font-size: 250%;
-            font-weight: 600;
-            font-family: $text-family;
-            color: $text-color;
-            padding: 1%;
-        }
-        p{
-            font-size: 120%;
-            font-family: $text-family;
-            color:$text-color;
-            padding: 1%;
-        }
-    }
-    
-}
-.inp{
- input{
-    font-size: 16px;
-    width: 65%;
-    position: relative;
-    padding: 14px 12px;
-    border-radius: 25%;
-    border: none;
- }
- a{
-    text-decoration: none;
-    border: 1px solid $fon-color;
-    background-color: $fon-color;
-    font-size: 100%;
-    font-family: $text-family;
-    font-weight: 600;
-    display: flex;
-    z-index: 2;
-    width: 25%;
-    text-align: center;
-    color: $text-color;
-    justify-content: center;
-    padding: 15px 5px;
-    margin-left: 5px;
-    border-radius: 40%;
- }
-}
-.btn-line{
-    width: 40px;
-    margin: 10px;
-    height: 3px;
-    background-color: #fff;
-}
-.hed-sec{
-    h4{
-        font-size: 95%;
-        padding: 0 5%;
-        color: $text-color;
-
-    }
-    a{
-        i{
-            font-size: 160%;
-            color: #fff;
-        }
-    }
-}
-.menu{
-    width: 50%;
-    height: 100%;
-    background-color: #000;
-    ul{
+    #nav-item{
+        margin:0 5px;
         li{
-            border-bottom: 1px solid #fff;
             list-style: none;
+            margin: 30px 6px;
             a{
-                
-                color:$text-color;
                 text-decoration: none;
+                font-size: 1.2rem;
+                font-weight: 600;
+                font-family: $text-family;
+                color: #fff;
             }
         }
     }
 }
+.logo{
+    margin: 10px;
+    img{
+        width: 90%;
+        height: 90px;
+        border-radius: 25%;
+    }
+}
+.item{
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .singup{
+        margin: 20px;
+        border: 2px solid $text-color;
+        border-radius: 35%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        font-family: $text-family;
+        font-weight: 700;
+        justify-content: center;
+    }
+    .menu-btn{
+        margin: 30px;
+    }
+    .icons{
+        margin: 20px 125px;
+        font-size: 2.2rem;
+        :nth-child(1){
+            padding: 0 30px;
+        }
+        :nth-child(2){
+            padding: 0 30px;
+        }
+    }
+}
+.head-section{
+    margin: 10% 1%;
+    .head-text{
+        color: $text-color;
+        h5{
+            padding: 10px 0;
+            font-size: 1.6rem;
+            font-family: $text-family;
+            font-weight: 600;
+        }
+        h2{
+            padding: 10px 0;
+            font-size: 1.8rem;
+            font-family: $text-family;
+            font-weight: 600;
+        }
+        p{
+            padding: 10px 0;
+            font-size: 1.4rem;
+            font-family: $text-family;
+            font-weight: 600;
+        }
+        .inp{
+            input{
+                width: 70%;
+                padding: 20px;
+                margin: 0 10px;
+                text-align: left;
+                font-size: 1.3rem;
+                font-family: $text-family;
+                font-weight: 600;
+            }
+            a{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid $fon-color;
+                background-color: $fon-color;
+                padding: 10px;
+                border-radius: 15%;
+                position: absolute;
+                z-index: 3;
+                transform: translate(400px,10px);
+                text-decoration: none;
+                color: $text-color;
+                font-size: 1.2rem;
+                font-weight: 600;
+                font-family: $text-family;
+                &:hover{
+                    color: $homecolor;
+                    transition: 1s;
+                    font-size: 1.3rem;
+                    margin: 0;
+                    transform: translate(450px 30px);
+                    
+                }
+            }
+        }
+    }
+}
+
+.hed-sec{
+    a{
+        color: $text-color;
+        font-size: 1.9rem;
+        font-weight: 600;
+        margin: 0 10px ;
+       &:hover{
+        color: $homecolor;
+        transition: 1s;
+        font-size: 2rem;
+        font-weight: 600;
+       }
+    }
+    h4{
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: $text-family;
+        &:hover{
+            color: $homecolor;
+            transition: 1s;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: $text-family;
+        }
+    }
+
+}
+.head-img{
+    .img{
+        img{
+            border:1px solid $homecolor;
+            border-radius:20%;
+            background:linear-gradient(rgba(245, 242, 242, 0.233),rgb(235, 229, 229)) ;
+            width: 100%;
+            height: 79vh;
+            transition: 2s;
+            transform: rotate(3deg);
+        }
+        
+    }
+
+}
+
+.menu-btn{
+     left:28px;
+     width: 28px;
+     height: 3px;
+     top: 5px;
+     cursor: pointer;
+    .btn-line{
+        width: 28px;
+        margin: 7px;
+        height: 3px;
+        background-color: #fff;
+        transition: 2s;
+
+    }
+    &.close{
+       
+     transform: rotate(360deg);
+     
+     :nth-child(1){
+        transform: rotate(45deg) translate(7px,5px);
+      }
+      :nth-child(2){
+        opacity: 0;
+      }
+      :nth-child(3){
+        transform: rotate(-45deg) translate(7px,-7px);
+      } 
+            
+    }
+    
+}
+
+

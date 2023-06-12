@@ -60,6 +60,7 @@ edit.addEventListener('click',()=>{
 
 const deleteBtn=document.getElementById('delete')
 deleteBtn.addEventListener('click',(e)=>{
+   
     if (deleteBtn) {
         const fName = deleteBtn.parentElement.parentElement.children[1].innerText
         Swal.fire({

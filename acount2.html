@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/learnteach.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/real estate.png" type="image/x-icon">
     <title>Teacher ACOUNT</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="list-nav col-12">
                             <div class="logo col-5 text-center m-5">
-                                <img class="w-100" src="./img/learnteach.png" alt="">
+                                <img class="w-100" src="./img/real estate.png" alt="">
                             </div>
                             <div class="catagory col-xl-12 col-sm-12 col-lg-12 mt-4">
                                 <ul>
@@ -120,8 +120,8 @@
                     <div class="col-xl-12 col-sm-12 col-lg-12">
                         <div class="col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
                             <button id="book-add" class="btn-warning w-100">Yarat</button>
-                            <button id="book-edit" class="btn-primary w-100">Yenilə</button>
-                            <button id="book-delete" class="btn-danger w-100">Sil</button>
+                            <button id="bookedit" class="btn-primary w-100">Yenilə</button>
+                            <button id="bookdelete" class="btn-danger w-100">Sil</button>
                         </div>
                     </div>
                  </section>
@@ -182,7 +182,7 @@
                <div class="col-sm-12 col-xl-12 col-lg-12 d-flex ">
                    <div class="col-sm-3 col-xl-3 col-lg-3">
                        <div class="logo mt-4">
-                           <img class="w-25" src="./img/learnteach.png" alt="">
+                           <img class="w-25" src="./img/real estate.png" alt="">
                        </div>
                        <div class="platforms d-flex mt-5">
                            <div class="col-4">
@@ -310,14 +310,22 @@
 
         // Book section btn
         const bookCreate=document.getElementById("book-add")
-        const bookEdit=document.getElementById('book-edit')
-        const bookDelete=document.getElementById('book-delete')
-
-
+        const bookEdit=document.getElementById('bookedit')
+        const bookDelete=document.getElementById('bookdelete')
+        // id cretae
+         
+         function generate_uuidv4(){
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
+         function(c) {
+           var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
+            return uuid.toString(16);
+          });
+        }
+        const id= generate_uuidv4()
 
         // Functions 
          function instalBook(){
-           set(ref(db, 'books/'+ bookName.value),{
+           set(ref(db, 'books/' + id),{
             Name:bookName.value,
             Text:bookText.value,
             Image:bookAvatar.value,
@@ -328,7 +336,7 @@
 
          }
          function editBook(){
-          update(ref(db, "book/" + bookName.value),{
+          update(ref(db, "book/" + id),{
             Text:bookText.value,
             Image:bookAvatar.value,
             Price:bookPrice.value
@@ -337,8 +345,8 @@
           .catch(err=>console.log(err))
          }
          function deleteBook(){
-            remove(ref(db,"book/" +bookName.value))
-            .then("kitab silindi")
+            remove(ref(db,"book/", id))
+            .then(alert("kitab silindi"))
             .catch(err=>console.log(err))
          }
 

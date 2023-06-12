@@ -1,3 +1,8 @@
+$homecolor:(#0a0ef8f8);
+$text-color:(#fff);
+$text-family:(Arial, Helvetica, sans-serif);
+$fon-color:( rgb(222, 182, 2, 0.904) );
+
 body{
   scroll-behavior: smooth;
   background-clip:inherit;
@@ -6,15 +11,28 @@ body{
 .card-item{
     box-shadow: 0.5px 5px 5px 10px #0728e41e;
     border: 1px solid transparent;
+    border-radius: 10%;
     padding-top: 50px;
     h2{
-    font-size: 150%;
+    font-size: 1rem;
     padding: 10px 0;
+    }
+    a{
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-family: $text-family;
+      font-weight: 600;
+      color: $homecolor;
     }
 
     p{
-      font-size: 100%;
-      padding: 10px 0;
+      font-size: 1rem;
+      padding: 5px 0;
+    }
+    &:hover{
+      transition: 1s;
+      cursor: pointer;
+      color: $fon-color;
     }
 }
 .owl-carousel{
@@ -83,15 +101,16 @@ footer{
   }
 }
 .item-text{
-  height: 15rem;
+  height: 19rem;
+  width: 15rem;
   border: 1px solid transparent;
-  border-radius: 35%;
+  border-radius: 15%;
   box-shadow: 0.5px 5px 5px 10px #0728e41e;
   margin: 0 5px;
   background-color: #fff;
   span{
     svg{
-      margin: 30px 3px;
+      margin: 50px 5px;
       border: 1px solid #0728e41e;
       width: 5rem;
       height: 5rem;
@@ -99,7 +118,178 @@ footer{
   }
   h2{
     margin: 15px 2px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 }
+.sec-head1{
+  h5{
+    font-size: 1.5rem;
+    font-family: $text-family;
+    font-weight: 600;
+    &:hover{
+      color: $fon-color;
+    }
+
+  }
+  h2{
+    font-size: 1.5rem;
+    font-family: $text-family;
+    font-weight: 600;
+    &:hover{
+      color: $fon-color;
+    }
+  }
+}
+.sec-btn{
+  a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $homecolor;
+    &:hover{
+      padding: 10px;
+      transition: 1s;
+      border: 2px solid $fon-color;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+}
+.sec-head{
+  h4{
+    font-size: 1.5rem;
+    font-family: $text-family;
+    font-weight: 600;
+    &:hover{
+      color: $fon-color;
+    }
+  }
+  h2{
+    font-size: 2.5rem;
+    font-family: $text-family;
+    font-weight: 600;
+    &:hover{
+      
+      color: $fon-color;
+    }
+  }
+}
+::selection{
+  background-color: $fon-color;
+}
+.card{
+  border-radius: 5%;
+  .card-img{
+    img{
+      padding: 10px;
+      border-radius: 10%;
+    }
+  }
+ .card-body{
+  h2{
+    font-size: 1.2rem;
+    font-family: $text-family;
+    font-weight: 600;
+    padding: 10px 0;
+    &:hover{
+      color: $fon-color;
+      transition: 1s;
+
+    }
+  }
+  p{
+    font-size: .6rem;
+    font-weight: 600;
+    font-family: $text-family;
+    padding: 10px0;
+  }
+  .card-foot{
+   .card-price{
+     padding: 10px;
+     a{
+       text-decoration: none;
+       font-size: 1.8rem;
+       padding: 15px;
+       color: #000;
+       
+     }
+      
+ 
+   }
+ 
+  }
+  .card-btn{
+   
+   a{
+     font-size: 1.2rem;
+     font-weight: 600;
+     padding: 25px;
+     &:hover{
+       display: block;
+       cursor: pointer;
+       font-size: 1.2rem;
+     font-weight: 600;
+     border: 1px solid $text-color;
+     padding: 25px;
+     border-radius: 50%;
+       transition: 1s;
+       background-color: $fon-color;
+     }
+   }
+  }
+ }
+  
+ &:hover{
+  background-color: $homecolor;
+  color: $fon-color;
+  cursor: pointer;
+  transition: 1s;
+  .card-btn{
+    a{
+      color:$text-color;
+      display: block;
+       cursor: pointer;
+       font-size: 1.2rem;
+     font-weight: 600;
+     border: 1px solid $text-color;
+     padding: 25px;
+     border-radius: 50%;
+       transition: 1s;
+       background-color: $fon-color;
+    }
+  }
+  .card-foot{
+
+    .card-price{
+      a{
+        color: #fff;
+      }
+    }
+  }
+ }
+ }
+ .foot-btn{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: $text-family;
+  font-weight: 600;
+  &:hover{
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: 1s;
+    border: 2px solid $fon-color;
+    border-radius: 50%;
+    padding: 10px;
+
+  }
+ }
+ .video{
+  a{
+    text-align: center;
+    svg{
+      position: absolute;
+      margin-top: 10%
+    }
+  }
+ }

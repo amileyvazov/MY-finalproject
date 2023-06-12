@@ -40,11 +40,14 @@ body {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: end;
+  justify-content: end;
+  align-items: end;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
   background-color: #200355;
 }
 footer .logo-foot img {

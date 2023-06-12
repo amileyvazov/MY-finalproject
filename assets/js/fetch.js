@@ -5,7 +5,7 @@ function getDataBase(){
         data.forEach(el => {
             const rowCard=document.querySelector('#card-sec .row')
            rowCard.innerHTML +=`
-           <div class="col-sm-12 card col-xl-4 col-lg-3 text-center ">
+           <div class="col-sm-12 card col-xl-4 col-lg-4 ">
              <div class="card-img"><img class="w-100" src="${el.avatar}" alt=""></div>
              <div class="card-body">
                 
@@ -26,7 +26,7 @@ function getDataBase(){
                     </span>
                     <a href="">$${el.price}</a>
                 </div>
-                <div class="cars-btn d-flex justify-content-end">
+                <div class="card-btn d-flex justify-content-end">
                 <a>Add to Card</a>
                 </div>
                </div>
