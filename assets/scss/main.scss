@@ -3,6 +3,7 @@ $text-color:(#fff);
 $text-family:(Arial, Helvetica, sans-serif);
 $fon-color:( rgb(222, 182, 2, 0.904) );
 
+@import 'admin.scss';
 body{
   scroll-behavior: smooth;
   background-clip:inherit;

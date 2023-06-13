@@ -60,20 +60,7 @@ edit.addEventListener('click',()=>{
 
 const deleteBtn=document.getElementById('delete')
 deleteBtn.addEventListener('click',(e)=>{
-   
-    if (deleteBtn) {
-        const fName = deleteBtn.parentElement.parentElement.children[1].innerText
-        Swal.fire({
-            title: fName,
-            text: "Silinsin mi?",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Bəli',
-            cancelButtonText: 'Xeyr'
-        }).then((result) => {
-            if (result.isConfirmed) {
+
                 fetch('https://64709d593de51400f7249cf4.mockapi.io/apilication/json/item'+deleteBtn.parentElement.parentElement.children[0].innerText,
                 {
                     method : 'DELETE'
@@ -96,8 +83,7 @@ deleteBtn.addEventListener('click',(e)=>{
                     }
                 })
                 .catch(()=>Swal.fire('Ooops!','Xəta baş verdi.','danger'))
-            }
-        })
-    }
+            })
+        
+    
 
-})

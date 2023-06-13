@@ -94,7 +94,7 @@
     </section>
     <section id="books">
         <div class="container">
-            <div class="row">
+            <div class="row" id="dataRow">
                 
             </div>
         </div>
@@ -226,35 +226,34 @@
        const app = initializeApp(firebaseConfig);
 
 
-       import{ getDatabase, ref, set , update, remove, get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+       import{ getDatabase, ref, set ,  get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
        const db=getDatabase()
        
-       const row=document.querySelector('#books .row')
-       function bookGetItem(){
-        get(ref(db,'books/',))
+       const dataaRow=document.querySelector('#dataRow')
+       function bookItem(){
+        get(ref(db,'books/'))
         .then(data=>{
-            console.log(data.val());
-            for (let i = 0; i < data.val().length; i++) {
-               
-                row.innerHTML+=`
-                <div class="col-sm-12 col-lg-3 col-xl-3">
-                    <div class="book-img"><img src="${data.val()[i].Image}" alt=""></div>
+            let datas=data.val()
+            for (const key in datas) {
+                    const el = datas[key];
+                       dataaRow.innerHTML +=` <div class="col-sm-12 col-lg-3 col-xl-3">
+                    <div class="book-img"><img src="${el.Image}" alt=""></div>
                     <div class="book-text">
-                        <a href=""><h2>${data.val()[i].Name}</h2></a>
-                        <p>${data.val()[i].Text}</p>
-                        <span> ${data.val()[i].Price} <s>$15</s></span>
+                        <a href=""><h2>${el.Name}</h2></a>
+                        <p>${el.Text}</p>
+                        <span> ${el.Price} <s>$15</s></span>
                     </div>
                     <div class="btn-book">
-                        <a href="">Səbətə əlavə et</a>
+                        <button >Səbətə əlavə et</button>
                     </div>
-                </div>
-                `
-                
+                   </div>
+                   `
             }
+           
         })
         .catch(err=> console.log(err))
        }
-       bookGetItem()
+       bookItem()
 
     </script>
 </body>

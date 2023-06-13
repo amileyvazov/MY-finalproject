@@ -4,8 +4,7 @@ body {
 }
 
 .list-nav {
-  background-color: #fff;
-  border-right: 1px solid #000;
+  background-color: rgb(79, 8, 247);
   height: 100%;
 }
 .list-nav .logo {
@@ -13,17 +12,17 @@ body {
 }
 
 .catagory li {
+  font-size: 1.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
   height: 5rem;
-  border: 1px solid #000;
   list-style: none;
   margin: 5rem 0 0 0;
 }
 .catagory li a {
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-decoration: none;
 }
 
@@ -37,22 +36,21 @@ footer .logo img {
 footer li {
   list-style: none;
 }
-footer a {
-  font-size: 150%;
+footer li a {
+  font-size: 1.2rem;
   padding: 10px;
   text-decoration: none;
   color: #fff;
 }
-footer h2 {
-  font-size: 150%;
+footer li h2 {
+  font-size: 1.2rem;
   padding: 10px;
   font-weight: 500;
 }
-footer p {
-  font-size: 130%;
+footer li p {
+  font-size: 1.3rem;
   font-weight: 600;
 }
-
-.foot-sec {
+footer .foot-sec {
   border: 1px solid #fff;
 }/*# sourceMappingURL=tec.css.map */
