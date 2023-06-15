@@ -1,46 +1,59 @@
-$homecolor:(#0a0ef8f8);
-$text-color:(#fff);
-$text-family:(Arial, Helvetica, sans-serif);
-$fon-color:( rgb(222, 182, 2, 0.904) );
+$homecolor:(#ec0a06bb);
+$text-color:(#000);
+$text-family:( sans-serif);
+$fon-color:( rgba(2, 134, 222, 0.904) );
+$font-size:(1.3rem);
 
-@import 'admin.scss';
+
 body{
-  scroll-behavior: smooth;
-  background-clip:inherit;
-  background: linear-gradient(rgba(182, 182, 182, 0.5),rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+  background: linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
 }
 .card-item{
-    box-shadow: 0.5px 5px 5px 10px #0728e41e;
+    box-shadow: 0.5px 5px 5px 5px #0127ff50;
     border: 1px solid transparent;
-    border-radius: 10%;
-    padding-top: 50px;
-    h2{
-    font-size: 1rem;
-    padding: 10px 0;
+    border-radius: 10px;
+    .card-head{
+     padding: 15px;
     }
-    a{
-      text-decoration: none;
-      font-size: 1.3rem;
-      font-family: $text-family;
-      font-weight: 600;
-      color: $homecolor;
-    }
+    .card-body{
 
-    p{
-      font-size: 1rem;
-      padding: 5px 0;
+      :nth-child(3){
+        h2{
+
+          font-size: 1rem;
+        }
+      }
+      h3{
+      font-size: $font-size;
+      font-family: $text-family;
+      }
+      a{
+        text-decoration: none;
+        font-size: $font-size;
+        font-family: $text-family;
+        font-weight: 600;
+        color: $homecolor;
+      }
+  
+      p{
+        font-size: $font-size;
+        font-family: $text-family;
+        font-weight: 500;
+      }
     }
     &:hover{
+      box-shadow: 5px 2px 5px 5px;
       transition: 1s;
       cursor: pointer;
       color: $fon-color;
+      background-color: $homecolor;
     }
 }
 .owl-carousel{
   .item{
     border: 1px solid #fff;
     background-color: #0728e41e;
-    border-radius: 20% !important;
+    border-radius: 20px !important;
     color: #fff;
     height: 500px !important;
     img{
@@ -50,7 +63,7 @@ body{
   .owl-dots{
     .owl-dot{
       span{
-        background-color: #dcf309 !important;
+        background-color: $fon-color !important;
       }
     
     }
@@ -59,73 +72,35 @@ body{
   }
 
 }
-footer{
-  background-color: #200355;
-  .logo{
-    img{
-      width: 60% !important;
-      border-radius: 20%;
-    }
-  }
-  li{
-    list-style: none;
-  }
-  a{
-    font-size: 150%;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-  }
-  h2{
-    font-size: 150%;
-    padding: 10px;
-    font-weight: 500;
-  }
-  p{
-    font-size: 130%;
-    font-weight: 600;
-  }
 
-}
-.foot-sec{
-  border: 1px solid #fff;
-}
-.card{
-  margin: 5%;
-}
-.card-text{
-  h2{
-    font-size: 150%;
-  }
-  p{
-    font-size: 50%;
-  }
-}
 .item-text{
   height: 19rem;
   width: 15rem;
   border: 1px solid transparent;
-  border-radius: 15%;
+  font-family: $text-family;
+  font-weight: 500;
+  border-radius: 15px;
   box-shadow: 0.5px 5px 5px 10px #0728e41e;
   margin: 0 5px;
   background-color: #fff;
+
   span{
     svg{
       margin: 50px 5px;
-      border: 1px solid #0728e41e;
       width: 5rem;
       height: 5rem;
     }
+
   }
   h2{
     margin: 15px 2px;
-    font-size: 1.2rem;
+    font-size: $font-size;
     font-weight: 500;
   }
 }
 .sec-head1{
   h5{
-    font-size: 1.5rem;
+    font-size: $font-size;
     font-family: $text-family;
     font-weight: 600;
     &:hover{
@@ -134,7 +109,7 @@ footer{
 
   }
   h2{
-    font-size: 1.5rem;
+    font-size: $font-size;
     font-family: $text-family;
     font-weight: 600;
     &:hover{
@@ -145,21 +120,21 @@ footer{
 .sec-btn{
   a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: $font-size;
     font-weight: 600;
     color: $homecolor;
     &:hover{
       padding: 10px;
       transition: 1s;
       border: 2px solid $fon-color;
-      border-radius: 50%;
+      border-radius: 50px;
       padding: 10px;
     }
   }
 }
 .sec-head{
   h4{
-    font-size: 1.5rem;
+    font-size: $font-size;
     font-family: $text-family;
     font-weight: 600;
     &:hover{
@@ -167,7 +142,7 @@ footer{
     }
   }
   h2{
-    font-size: 2.5rem;
+    font-size: $font-size;
     font-family: $text-family;
     font-weight: 600;
     &:hover{
@@ -180,37 +155,45 @@ footer{
   background-color: $fon-color;
 }
 .card{
-  border-radius: 5%;
+  border-radius: 15px;
+  margin:  5%;
+  position:relative;
+  z-index: -1;
+  &:hover{
+    color: $text-color;
+    background: $homecolor;
+    transition: 2s ease;
+    cursor: pointer;
+
+  }
   .card-img{
     img{
       padding: 10px;
-      border-radius: 10%;
+      border-radius: 15px;
     }
   }
  .card-body{
   h2{
-    font-size: 1.2rem;
+    font-size: $font-size;
     font-family: $text-family;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px 0;
-    &:hover{
-      color: $fon-color;
-      transition: 1s;
-
-    }
   }
   p{
-    font-size: .6rem;
+    font-size:1rem;
     font-weight: 600;
     font-family: $text-family;
-    padding: 10px0;
+    padding: 10px 0;
   }
-  .card-foot{
+} 
+.card-foot{
    .card-price{
-     padding: 10px;
+     padding:10px 0;
      a{
-       text-decoration: none;
-       font-size: 1.8rem;
+        text-decoration: none;
+       font-size: 1.9rem;
+       font-family: $text-family;
+       font-weight: 500;
        padding: 15px;
        color: #000;
        
@@ -219,21 +202,22 @@ footer{
  
    }
  
-  }
+}
   .card-btn{
    
-   a{
-     font-size: 1.2rem;
-     font-weight: 600;
-     padding: 25px;
+    button{
+      border-radius: 10px;
+     font-size: 1rem;
+     font-weight: 500;
+     padding: 10px;
      &:hover{
        display: block;
        cursor: pointer;
-       font-size: 1.2rem;
-     font-weight: 600;
-     border: 1px solid $text-color;
-     padding: 25px;
-     border-radius: 50%;
+       font-size: 1rem;
+       font-weight: 500;
+      border: 1px solid $text-color;
+      padding: 10px;
+      border-radius: 10px;
        transition: 1s;
        background-color: $fon-color;
      }
@@ -242,20 +226,19 @@ footer{
  }
   
  &:hover{
-  background-color: $homecolor;
+  background: linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), $homecolor;
   color: $fon-color;
   cursor: pointer;
-  transition: 1s;
+  transition: 2s ease-in-out;
   .card-btn{
-    a{
+    button{
       color:$text-color;
-      display: block;
        cursor: pointer;
-       font-size: 1.2rem;
-     font-weight: 600;
+       font-size: $font-size;
+     font-weight: 500;
      border: 1px solid $text-color;
-     padding: 25px;
-     border-radius: 50%;
+     padding: 10px;
+     border-radius: 50px;
        transition: 1s;
        background-color: $fon-color;
     }
@@ -268,29 +251,76 @@ footer{
       }
     }
   }
- }
- }
+}
+
+ 
+.video{
+  iframe{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px ;
+    height: 432px;
+    z-index: -9;
+  }
+  svg{
+   position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    margin: 50px;
+  }
+}
+
  .foot-btn{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: $font-size;
   font-family: $text-family;
-  font-weight: 600;
+  font-weight: 500;
   &:hover{
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: $font-size;
     transition: 1s;
     border: 2px solid $fon-color;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 10px;
 
   }
  }
- .video{
-  a{
-    text-align: center;
-    svg{
-      position: absolute;
-      margin-top: 10%
+  footer{
+    background-color: #200355;
+    .logo{
+      display: flex;
+        svg{
+          color: $fon-color !important;
+        }
     }
+    li{
+      list-style: none;
+    }
+    a{
+      font-size: $font-size;
+      padding: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+    h2{
+      font-size: $font-size;
+      padding: 10px;
+      font-weight: 500;
+    }
+    p{
+      font-size: $font-size;
+      font-weight: 600;
+    }
+  
   }
- }
+  .foot-sec{
+    border: 1px solid #fff;
+  }

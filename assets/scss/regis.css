@@ -1,6 +1,4 @@
 body {
-  scroll-behavior: smooth;
-  background-clip: inherit;
   background: linear-gradient(rgba(182, 182, 182, 0.5), rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
 }
 
@@ -11,26 +9,27 @@ body {
   margin: 10px 0;
   text-decoration: none;
   border: 1px solid transparent;
-  color: rgb(5, 1, 245);
+  color: #EABD4D;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 10px 0;
-  border: 1px dashed 0;
+  border: 1px dashed r;
 }
 
 .card {
-  background-size: cover;
   background-position: center;
+  background-size: cover !important;
+  filter: blur(12, 22, 2, 2);
   background: linear-gradient(rgba(174, 175, 174, 0.37), rgba(196, 193, 193, 0.363)), url(https://img.freepik.com/premium-vector/welcome-back-school-background_3589-817.jpg?w=2000);
 }
 
-.small1 {
-  text-decoration: none;
-  padding: 10px;
-  font-size: 1.5rem;
-  color: rgb(5, 1, 245);
+.h4 {
+  color: rgba(2, 134, 222, 0.904);
 }
 
-.h4 {
-  color: rgb(5, 1, 245);
+.small {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: rgba(2, 134, 222, 0.904);
 }/*# sourceMappingURL=regis.css.map */

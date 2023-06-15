@@ -1,10 +1,17 @@
+$homecolor:(#EABD4D);
+$text-color:(#fff);
+$text-family:( sans-serif);
+$fon-color:( rgba(2, 134, 222, 0.904) );
+$font-size:(1.5rem);
+
+
 
 body{
-    background: linear-gradient(rgba(182, 182, 182, 0.5),rgba(190, 190, 190, 0.5)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+    background: linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
 } 
 #nav-head{
     border: 1px solid #fff;
-    background-color: #0a0ef8f8;
+    background: linear-gradient(rgba(248, 244, 244, 0.699),rgba(255, 255, 255, 0.877)), $homecolor;
 
 }
 #nav-bar{
@@ -43,12 +50,6 @@ body{
     }
 }
 footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: end;
-    justify-content: end;
-    align-items: end;
     bottom: 0;
     background-color: #200355;
     .logo-foot{
@@ -58,30 +59,27 @@ footer{
       }
     }
     p{
-        font-size: 130%;
+        font-size: $font-size;
         font-weight: 600;
     }
-    
-    
-    
-}
-.foot-item{
-
     li{
       list-style: none;
     }
     a{
-      font-size: 150%;
+      font-size: $font-size;
       padding: 10px;
       text-decoration: none;
       color: #fff;
     }
     h2{
-      font-size: 150%;
+      font-size: $font-size;
       padding: 10px;
       font-weight: 500;
     }
+    
+    
 }
+
 .foot-sec{
     border: 1px solid #fff;
 }

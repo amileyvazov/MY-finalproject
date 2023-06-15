@@ -1,129 +1,183 @@
-$homecolor:(#0a0ef8f8);
-$text-color:(#fff);
-$text-family:(Arial, Helvetica, sans-serif);
-$fon-color:( rgb(222, 182, 2, 0.904) );
+$homecolor:(#ec0a06bb);
+$text-color:(#000);
+$text-family:( sans-serif);
+$fon-color:( rgba(2, 134, 222, 0.904) );
+$font-size:(1rem);
+
+:root{
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    --card-border-radius:2rem;
+    --border-radius-1:.4rem;
+    --border-radius-2:.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-paddong:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow:0 2rem 3rem var(var(--color-light))
+}
+
+a{
+    color:var(--color-dark)
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: .87rem;
+}
+h4{
+    font-size: .8rem;
+}
+h5{
+    font-size: .77rem;
+}
+
 
 header{
-    background:linear-gradient(rgba(128, 127, 127, 0.329),rgba(143, 141, 141, 0.541)) $homecolor ;
+    background:linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), $homecolor ;
     width: 100%;
     height: 100vh;
     
     
 }
+
 #nav-bar{
     width: 100%;
-    padding-top: 5px;
-    z-index: 999;
-    position: fixed;
-    background:linear-gradient(rgba(143, 141, 141, 0.329),rgba(143, 141, 141, 0.356)) $homecolor;
+    position:fixed;
+    background:linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)) $homecolor;
     #nav-item{
-        margin:0 5px;
         li{
+            padding: 15px;
             list-style: none;
-            margin: 30px 6px;
             a{
                 text-decoration: none;
-                font-size: 1.2rem;
+                font-size: $font-size;
                 font-weight: 600;
                 font-family: $text-family;
-                color: #fff;
+                color: $text-color;
+                &:hover{
+                    color: $fon-color;
+                    border-bottom: 1px solid $fon-color;
+                    transition: 1s;
+                }
+            }
+            :nth-child(1){
+                span{
+                    color: $fon-color;
+                }
+
             }
         }
     }
 }
 .logo{
-    margin: 10px;
-    img{
-        width: 90%;
-        height: 90px;
-        border-radius: 25%;
-    }
-}
-.item{
     a{
         text-decoration: none;
-        color: #fff;
+        h2{
+            font-size: var(--card-paddong);
+            font-weight: 700;
+            span{
+                color: $fon-color;
+            }
+        }
     }
-    .singup{
-        margin: 20px;
-        border: 2px solid $text-color;
-        border-radius: 35%;
-        text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+.singup{
+    border: 2px solid transparent;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: $text-family;
+    font-weight: 500;
+    background-color: $fon-color;
+    a{
         display: flex;
-        flex-direction: column;
-        font-size: 1rem;
-        font-family: $text-family;
-        font-weight: 700;
         justify-content: center;
-    }
-    .menu-btn{
-        margin: 30px;
-    }
-    .icons{
-        margin: 20px 125px;
-        font-size: 2.2rem;
-        :nth-child(1){
-            padding: 0 30px;
-        }
-        :nth-child(2){
-            padding: 0 30px;
-        }
+        align-items: center;
+        flex-direction: column;
+        color:$text-color;
     }
 }
+
 .head-section{
-    margin: 10% 1%;
+    margin: 10%;
     .head-text{
         color: $text-color;
         h5{
             padding: 10px 0;
-            font-size: 1.6rem;
+            font-size: $font-size;
             font-family: $text-family;
             font-weight: 600;
         }
         h2{
             padding: 10px 0;
-            font-size: 1.8rem;
+            font-size: $font-size;
             font-family: $text-family;
             font-weight: 600;
         }
         p{
             padding: 10px 0;
-            font-size: 1.4rem;
+            font-size: $font-size;
             font-family: $text-family;
             font-weight: 600;
         }
         .inp{
             input{
                 width: 70%;
-                padding: 20px;
-                margin: 0 10px;
+                padding:  20px;
+                margin:  10px;
                 text-align: left;
-                font-size: 1.3rem;
+                font-size: $font-size;
                 font-family: $text-family;
                 font-weight: 600;
             }
-            a{
+            button{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 border: 1px solid $fon-color;
                 background-color: $fon-color;
                 padding: 10px;
-                border-radius: 15%;
+                border-radius: 15px;
                 position: absolute;
                 z-index: 3;
-                transform: translate(400px,10px);
+                transform: translate(335px,20px);
                 text-decoration: none;
                 color: $text-color;
-                font-size: 1.2rem;
-                font-weight: 600;
+                font-size: $font-size;
+                font-weight: 500;
                 font-family: $text-family;
                 &:hover{
-                    color: $homecolor;
+
+                    color: $text-color;
                     transition: 1s;
-                    font-size: 1.3rem;
-                    margin: 0;
-                    transform: translate(450px 30px);
+                    font-size: $font-size;
                     
                 }
             }
@@ -131,27 +185,29 @@ header{
     }
 }
 
-.hed-sec{
+.hed1-sec{
+    padding: 10px;
     a{
         color: $text-color;
-        font-size: 1.9rem;
+        font-size:$font-size;
+        padding: 0 10px;
         font-weight: 600;
-        margin: 0 10px ;
+        align-items: center;
        &:hover{
-        color: $homecolor;
+        color: $fon-color;
         transition: 1s;
-        font-size: 2rem;
+        font-size: $font-size;
         font-weight: 600;
        }
     }
     h4{
-        font-size: 1rem;
+        font-size: $font-size;
         font-weight: 600;
         font-family: $text-family;
         &:hover{
-            color: $homecolor;
+            color: $fon-color;
             transition: 1s;
-            font-size: 1rem;
+            font-size: $font-size;
             font-weight: 600;
             font-family: $text-family;
         }
@@ -161,8 +217,8 @@ header{
 .head-img{
     .img{
         img{
-            border:1px solid $homecolor;
-            border-radius:20%;
+            border:1px solid transparent;
+            border-radius:20px;
             background:linear-gradient(rgba(245, 242, 242, 0.233),rgb(235, 229, 229)) ;
             width: 100%;
             height: 79vh;
@@ -174,36 +230,5 @@ header{
 
 }
 
-.menu-btn{
-     left:28px;
-     width: 28px;
-     height: 3px;
-     top: 5px;
-     cursor: pointer;
-    .btn-line{
-        width: 28px;
-        margin: 7px;
-        height: 3px;
-        background-color: #fff;
-        transition: 2s;
-
-    }
-    &.close{
-       
-     transform: rotate(360deg);
-     
-     :nth-child(1){
-        transform: rotate(45deg) translate(7px,5px);
-      }
-      :nth-child(2){
-        opacity: 0;
-      }
-      :nth-child(3){
-        transform: rotate(-45deg) translate(7px,-7px);
-      } 
-            
-    }
-    
-}
 
 

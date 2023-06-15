@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/real estate.png" type="image/x-icon">
-    <title>Teacher ACOUNT</title>
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--  Sass css-->
-    <link rel="stylesheet" href="./assets/scss/tec.css">
-    <link rel="stylesheet" href="./assets/scss/tec.css.map">
+
 </head>
 <body >
     <div class="container-fluid">
@@ -21,9 +18,7 @@
                 <header>
                     <div class="row">
                         <div class="list-nav col-12">
-                            <div class="logo col-5 text-center m-5">
-                                <img class="w-100" src="./img/real estate.png" alt="">
-                            </div>
+                            
                             <div class="catagory col-xl-12 col-sm-12 col-lg-12 mt-4">
                                 <ul>
                                     <li>
@@ -58,24 +53,25 @@
                                 <h2>Kurs yaradın</h2>
                             </div>
                             <div class="col-xl-12 col-sm-12 col-lg-12 my-5">
-                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
-                                    <label for="input">Kursun şəkili</label>
-                                    <input id="avatar"  type="text">
+                                <div class="input-group mb-3 col-xl-12 col-sm-12 col-lg-12">
+                                    <label class="w-25 text-center fs-4 fs-normal" for="input-group-text">Kursun şəkili</label>
+                                    <input id="courseAvatar" type="text"  class="input-group-text form-control" >
+                                    
+                                </div>
+                                
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-3">
+                                    <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kursun Adı</label>
+                                    <input id="courseName" class="input-group form-control form-control-user"  type="text">
     
                                 </div>
-                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
-                                    <label for="input">Kursun Adı</label>
-                                    <input id="name"   type="text">
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-2">
+                                    <label class="w-25 text-center fs-2 fs-normal" for="input-group">Kursun məzmunu</label>
+                                    <input id="courseText" class="input-group form-control form-control-user m-2" style="height: 100px;" type="text">
     
                                 </div>
-                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
-                                    <label for="input">Kursun məzmunu</label>
-                                    <input id="text"  type="text">
-    
-                                </div>
-                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex">
-                                    <label for="input">Kursun qiyməti</label>
-                                    <input id="price"  type="text">
+                                <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-3 ">
+                                    <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kursun qiyməti</label>
+                                    <input id="coursePrice" class="input-group form-control form-control-user" type="text">
     
                                 </div>
                                 <div class="my-4 col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
@@ -95,23 +91,23 @@
                         </div>
                         <div class="col-xl-12 col-sm-12 col-lg-12 ">
                             <div class=" d-flex">
-                                <label for="input">Kitab şəkilini yüklə</label>
-                                <input id="book-avatar"  type="text">
+                                <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kitab şəkilini yüklə</label>
+                                <input id="book-avatar" class="input-group m-2"  type="text">
     
                             </div>
                             <div class=" d-flex">
-                                <label for="input">Kitabın adı</label>
-                                <input id="book-name"   type="text">
+                                <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kitabın adı</label>
+                                <input id="book-name" class="input-group m-2 "  type="text">
     
                             </div>
                             <div class=" d-flex">
-                                <label for="input">Kitabın məzmunu</label>
-                                <input id="book-text"  type="text">
+                                <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kitabın məzmunu</label>
+                                <input id="book-text"class="input-group m-2 w-100 " style="height: 200px;"  type="text">
     
                             </div>
                             <div class=" d-flex">
-                                <label for="input">Kitabın qiyməti</label>
-                                <input id="book-price"  type="text">
+                                <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kitabın qiyməti</label>
+                                <input id="book-price"class="input-group m-2"   type="text">
     
                             </div>
                         </div>
@@ -176,104 +172,7 @@
             </div>
         </div>
     </div>
-    <footer class="mt-5">
-        <div class="container-fluid text-white">
-           <div class="row">
-               <div class="col-sm-12 col-xl-12 col-lg-12 d-flex ">
-                   <div class="col-sm-3 col-xl-3 col-lg-3">
-                       <div class="logo mt-4">
-                           <img class="w-25" src="./img/real estate.png" alt="">
-                       </div>
-                       <div class="platforms d-flex mt-5">
-                           <div class="col-4">
-                               <a href=""><i class="fa-brands fa-instagram"></i></a>
-                           </div>
-                           <div class="col-4">
-                               <a href=""><i class="fa-brands fa-facebook"></i></a>
-                           </div>
-                           <div class="col-4">
-                               <a href=""><i class="fa-brands fa-twitter"></i></a>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
-                       <h2>Haqqında</h2>
-                       <ul>
-                           <li class="py-2">
-                               <a href="">Kurslar</a>
-                           </li>
-                           <li class="py-2">
-                               <a href="">Təlimçilər</a>
-                           </li>
-                           <li class="py-2">
-                               <a href="">Kitab mağazası</a>
-                           </li>
-                           <li class="py-2">
-                               <a href="">Yaradıcılar</a>
-                           </li>
-                       </ul>
-                   </div>
-                   <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
-                       <h2>Kateqoriyalar</h2>
-                       <ul class="mt-3">
-                           <li>
-                               <a href="">Kimya</a>
-                           </li>
-                           <li>
-                               <a href="">Coğrafiya</a>
-                           </li>
-                           <li>
-                               <a href="">Həndəsə və Riyaziyyat</a>
-                           </li>
-                           <li>
-                               <a href="">İncəsənət və Sənətkarlıq</a>
-                           </li>
-                           <li>
-                               <a href="">Computer Science</a>
-                           </li>
-                       </ul>
-                   </div>
-                   <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
-                       <h2>Bizimlə əlaqə saxlamaq</h2>
-                       <ul class="mt-3 ">
-                           <li class="d-flex">
-                               <a href=""><i class="fa-brands fa-instagram"></i></a>
-                               <a href="social.html">Inistagram səhifəsilə</a>
-                           </li>
-                           <li class="d-flex">
-                               <a href=""><i class="fa-brands fa-facebook"></i></a>
-                               <a href="social.html">Facebook səhifəsilə</a>
-                           </li>
-                           <li class="d-flex">
-                               <a href=""><i class="fa-brands fa-twitter"></i></a>
-                               <a href="social.html">Twitter səhifəsilə</a>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
 
-               <div class="col-sm-12 col-xl-12 col-lg-12 d-flex foot-sec">
-                   <div class="col-sm-6 col-xl-6 col-lg-6">
-                       <p>
-                           © 2023 LEARNTEACH EDUCATION COMPANY.
-                       </p>
-
-                   </div>
-                   <div class="col-sm-6 col-xl-6 col-lg-6 d-flex">
-                       <div class="col-4">
-                           <img class="w-25" src="./img/pngimg.com - mastercard_PNG1.png" alt="">
-                       </div>
-                       <div class="col-4">
-                           <img class="w-25" src="./img/Visa-Logo-PNG-Image.png" alt="">
-                       </div>
-                       <div class="col-4">
-                           <img class="w-25" src="./img/PayPal.svg.png" alt="">
-                       </div>
-                   </div>
-               </div>
-           </div>
-        </div>
-       </footer>
 
     <!-- javascript tags -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -336,7 +235,7 @@
 
          }
          function editBook(){
-          update(ref(db, "book/" + id),{
+          update(ref(db, "book/" + bookName.value),{
             Text:bookText.value,
             Image:bookAvatar.value,
             Price:bookPrice.value
@@ -345,7 +244,7 @@
           .catch(err=>console.log(err))
          }
          function deleteBook(){
-            remove(ref(db,"book/", id))
+            remove(ref(db,"book/"))
             .then(alert("kitab silindi"))
             .catch(err=>console.log(err))
          }
@@ -354,7 +253,64 @@
         bookCreate.addEventListener('click', instalBook)
         bookEdit.addEventListener('click', editBook)
         bookDelete.addEventListener('click', deleteBook)
+
+
+         // Course section input
+         const courseAvatar=document.getElementById('courseAvatar')
+        const courseName=document.getElementById('courseName')
+        const courseText=document.getElementById('courseText')
+        const coursePrice=document.getElementById('coursePrice')
+        
+        // Course section btn
+        const courseCreate=document.getElementById('add')
+        const courseEdit=document.getElementById('edit')
+        const courseDelete=document.getElementById('delete')
+        // id cretae
+         
+
+        
+        // Functions 
+         function instalCourse(){
+           set(ref(db, 'course/' + id),{
+            Name:courseName.value,
+            Text:courseText.value,
+            İmage:courseAvatar.value,
+            Price:coursePrice.value
+           })
+           .then(res=>()=>{
+             if(res.ok){
+             alert('kurs əlavə  olundu')
+             }else{
+              alert('elave olunmadi')
+             }
+        
+           })
+           .catch(err=>console.log(err))
+        
+         }
+         function editCourse(){
+          update(ref(db, "course/"  ),{
+            Text:courseText.value,
+            Image:courseAvatar.value,
+            Price:coursePrice.value
+          })
+          .then(alert('dəyişiklik qeydə alındı'))
+          .catch(err=>console.log(err))
+         }
+         function deleteCourse(){
+            remove(ref(db,"course/", id))
+            .then(alert("dəyişiklik qeydə alındı"))
+            .catch(err=>console.log(err))
+         }
+
+        
+        // Btns addEvenlistener 
+        courseCreate.addEventListener('click',  instalCourse )
+        courseEdit.addEventListener('click',  editCourse)
+        courseDelete.addEventListener('click', deleteCourse)
       </script>
-    <script src="./assets/js/postcrate.js"></script>
+     
+      <script src="./assets/js/fetch.js"></script>
+
 </body>
 </html>

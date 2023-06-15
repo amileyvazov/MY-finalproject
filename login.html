@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./img/learnteach.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
         <title>Login Acount</title>
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -29,11 +29,12 @@
                                 <!-- Nested Row within Card Body -->
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-sm-6 col-md-6 logo ">
-                                        
-                                        <img class="w-100" src="./img/img-student-2.png" alt="">
-                                        <div class="col-7">
-                                            <a href="register.html" ><i class="fa-solid fa-angle-left"></i></a>
-                                            <a href="register.html"> Qeydiyyat səhifəsinə qayıdın</a>
+                                        <div class="col-10">
+                                            <img class="w-100" src="./img/img-student-2.png" alt="">
+
+                                        </div>
+                                        <div class="col-5">
+                                            <a href="./register.html"><span>Qeydiyyat səhifəsinə qayıdın</span></a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-xl-6 col-lg-6 col-sm-6 col-md-6 ">
@@ -59,13 +60,8 @@
                                                 <button  id="loginbtn" class="btn btn-warning col-12">
                                                   Daxil olun
                                                 </button>
-                                                <hr>
-                                                <a href="section.html" id="googleLogin" class="btn btn-google col-12 btn-danger my-3">
-                                                    <i class="fab fa-google fa-fw"></i> Google ilə daxil olun
-                                                </a>
-                                                <a href="section.html" id="faceLogin" class="btn btn-facebook col-12 btn-primary my-3">
-                                                    <i class="fab fa-facebook-f fa-fw"></i>Facebook ilə daxil olun
-                                                </a>
+                                                
+                                               
                                             </form>
                                             <hr>
                                             <div class="text-center col-lg-12 col-xl-12 ">
@@ -94,11 +90,11 @@
           const googleLogin=document.getElementById('googleLogin')
           const facebookLogin=document.getElementById('faceLogin')
         // Functions
-        loginBtn.addEventListener('click',()=>{
+        loginBtn.addEventListener('click',(e)=>{
             if(emailInp.value.trim() =='' && passwordInp.value.trim() ==''){
-               emailInp.style.border ='1px dashed red';
+               emailInp.style.border ='1px solid red !important';
                emailInp.style.background='red';
-               passwordInp.style.border='1px dashed red';
+               passwordInp.style.border='1px solid red !important';
                passwordInp.style.background='red';
             }
         })
