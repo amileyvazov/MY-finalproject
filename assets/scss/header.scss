@@ -123,6 +123,9 @@ a{
         flex-direction: column;
         color:$text-color;
     }
+    &:hover{
+        color: $fon-color;
+    }
 }
 
 .head-section{
@@ -168,7 +171,6 @@ a{
                 position: absolute;
                 z-index: 3;
                 transform: translate(335px,20px);
-                text-decoration: none;
                 color: $text-color;
                 font-size: $font-size;
                 font-weight: 500;

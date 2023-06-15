@@ -1,36 +1,140 @@
+:root {
+  --color-primary:#7380ec;
+  --color-danger:#ff7782;
+  --color-success:#41f1b6;
+  --color-warning:#ffbb55;
+  --color-white:#fff;
+  --color-info-dark:#7d8da1;
+  --color-info-light:#dce1eb;
+  --color-dark:#363949;
+  --color-light:rgba(132,139,200,.18);
+  --color-primary-variant:#111e88;
+  --color-dark-variant:#677483;
+  --color-background:#f6f6f9;
+  --card-border-radius:2rem;
+  --border-radius-1:.4rem;
+  --border-radius-2:.8rem;
+  --border-radius-3:1.2rem;
+  --card-paddong:1.8rem;
+  --padding-1:1.2rem;
+  --box-shadow:0 2rem 3rem var(var(--color-light)) ;
+}
+
 body {
   background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
 }
 
-#nav-head {
-  border: 1px solid #fff;
-  background: linear-gradient(rgba(248, 244, 244, 0.699), rgba(255, 255, 255, 0.877)), #EABD4D;
+header {
+  width: 100%;
+  height: 100vh;
 }
 
 #nav-bar {
-  z-index: 999;
+  width: 100%;
   position: fixed;
+  background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)) rgba(236, 10, 6, 0.7333333333);
 }
-
-.logo img {
-  padding: 5% 10%;
-  border-radius: 25%;
-  width: 50%;
-  height: 50%;
-}
-
-#nav-item {
-  margin: 10px;
-}
-#nav-item li {
+#nav-bar #nav-item li {
+  padding: 15px;
   list-style: none;
 }
-#nav-item li a {
+#nav-bar #nav-item li a {
   text-decoration: none;
-  color: #fff;
-  font-size: 150%;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #000;
+}
+#nav-bar #nav-item li a:hover {
+  color: rgba(2, 134, 222, 0.904);
+  border-bottom: 1px solid rgba(2, 134, 222, 0.904);
+  transition: 1s;
+}
+#nav-bar #nav-item li :nth-child(1) span {
+  color: rgba(2, 134, 222, 0.904);
+}
+
+.logo a {
+  text-decoration: none;
+}
+.logo a h2 {
+  font-size: var(--card-paddong);
+  font-weight: 700;
+}
+.logo a h2 span {
+  color: rgba(2, 134, 222, 0.904);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.singup {
+  border: 2px solid transparent;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: sans-serif;
   font-weight: 500;
-  margin: 30% 0;
+  background-color: rgba(2, 134, 222, 0.904);
+}
+.singup a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+.singup:hover {
+  color: rgba(2, 134, 222, 0.904);
+}
+
+.book-item {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin: 40px;
+  padding: 10px;
+}
+.book-item:hover {
+  background: rgba(236, 10, 6, 0.7333333333);
+  cursor: pointer;
+  color: #fff;
+}
+.book-item .book-img img {
+  border-radius: 20px;
+  height: 200px;
+}
+.book-item .book-text {
+  transform: translate(20px 100px);
+}
+.book-item .book-text h2 {
+  padding: 15px 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.book-item .book-text p {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  padding: 10px 0 0 0;
+}
+.book-item .btn-book {
+  margin: 10pz 0;
+}
+.book-item .btn-book span {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.book-item .btn-book button {
+  background: rgba(2, 134, 222, 0.904);
+  border-radius: 25px;
+  padding: 15px;
+  border: 1px solid transparent;
 }
 
 #icon a {
@@ -48,22 +152,29 @@ footer .logo-foot img {
   border-radius: 20%;
 }
 footer p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 footer li {
   list-style: none;
 }
 footer a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 10px;
   text-decoration: none;
   color: #fff;
 }
 footer h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 10px;
   font-weight: 500;
+}
+
+.owl-carousel {
+  height: 100vh !important;
+}
+.owl-carousel .item .item-body {
+  background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)), url(https://world.edu/wp-content/uploads/2019/12/books2019.jpg);
 }
 
 .foot-sec {

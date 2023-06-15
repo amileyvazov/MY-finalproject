@@ -31,29 +31,29 @@
                             <div class="user m-3">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0 mt-3">
-                                        <input type="text" class="form-control form-control-user" id="Name"
+                                        <input type="text" class="form-control form-control-user" id="username"
                                             placeholder="Ad">
                                     </div>
                                     <div class="col-sm-6 mt-3">
-                                        <input type="text" class="form-control form-control-user" id="Name"
+                                        <input type="text" class="form-control form-control-user" id="usersurname"
                                             placeholder="Soyad">
                                     </div>
                                 </div>
                                 <div class="form-group mt-3">
-                                    <input type="email" class="form-control form-control-user" id="Emailİnp"
+                                    <input type="email" class="form-control form-control-user" id="useremail"
                                         placeholder="Email hesab daxil edin">
                                 </div>
                                 <div class="form-group row mt-3">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="Password" placeholder="Şifrə">
+                                            id="userpasword" placeholder="Şifrə">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                            id="Password" placeholder="Şifrənizi təsdiqləyin">
+                                            id="corretpas" placeholder="Şifrənizi təsdiqləyin">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary btn-user col-12 btn-warning mt-2 btn-block">
+                                <button id="regisbtn" class="btn btn-primary btn-user col-12 btn-warning mt-2 btn-block">
                                    Qeydiyyatdan keçin
                                 </button>
                                 
@@ -70,15 +70,88 @@
 
     </div>
 
+ <!-- javascript tags -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script type="module">
+     // Import the functions you need from the SDKs you need
+     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+     // TODO: Add SDKs for Firebase products that you want to use
+     // https://firebase.google.com/docs/web/setup#available-libraries
+   
+     // Your web app's Firebase configuration
+     const firebaseConfig = {
+       apiKey: "AIzaSyC2pFMNIxh4wEXSRYZSI71VNQRiIAylPsI",
+       authDomain: "myproject-161de.firebaseapp.com",
+       databaseURL: "https://myproject-161de-default-rtdb.firebaseio.com",
+       projectId: "myproject-161de",
+       storageBucket: "myproject-161de.appspot.com",
+       messagingSenderId: "139905651745",
+       appId: "1:139905651745:web:7ea3788ada21e9d8993f60"
+     };
+   
+     // Initialize Firebase
+     const app = initializeApp(firebaseConfig);
 
+
+     import{ getDatabase, ref, set , update, remove, get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
+  
+
+     const db=getDatabase()
+     
+     // id cretae
+      
+      function generate_uuidv4(){
+         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
+      function(c) {
+        var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
+         return uuid.toString(16);
+       });
+     }
+     const id= generate_uuidv4()
+    // Inputs
+    const userName=document.getElementById('username')
+    const userSurname=document.getElementById('usersurname')
+    const userEmail=document.getElementById('useremail')
+    const userPasword=document.getElementById('userpasword')
+    const corretPassword=document.getElementById('corretpas')
+    // Register button
+     const regisBtn=document.getElementById('regisbtn')
+     
+     function addUser(){
+        set(ref(db, 'users/' + id),{
+            Name:userName.value,
+            Surname:userSurname.value,
+            Email:userEmail.value,
+            Password:userPasword.value,
+            Correcpass:corretPassword.value
+        })
+        .then(data=>{
+            if(!data.ok){
+                userName.value==' ',
+                userSurname.value=' ',
+               userEmail.value==' ',
+                userPasword.value=='',
+               corretPassword.value==' '
+            }
+            
+        })
+        .then(alert('Xoş gəlmisiniz'))
+        .catch(err=>console.log(err))
+     }
+
+
+
+    //  Function ad button
+    regisBtn.addEventListener('click',addUser)
+   </script>
 
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/adminpanel/jquery/jquery.min.js"></script>
+    <script src="./assets/adminpanel/bootstrap/js/bootstrap.bundle.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="./assets/adminpanel/jquery-easing/jquery.easing.js"></script>
 
 
 
