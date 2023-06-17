@@ -122,6 +122,11 @@
     <footer>
         <div class="container-fluid text-white">
            <div class="row">
+               
+            <div class="row"><div class="foot-inp d-flex">
+                <input id="formİnp" type="text" class="form-control form-control-user m-2" placeholder="Emailinizi daxil edin">
+                <button id="btnEmail" class="btn btn-danger col-6 m-2">Daxil et</button>
+            </div>
                <div class="col-sm-3 col-xl-3 col-lg-3">
                    <div class="logo-foot my-4">
                     <a class="d-flex" href="home.html">
@@ -141,64 +146,57 @@
                        </div>
                    </div>
                </div>
-               <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 foot-item">
-                   <h2>Haqqında</h2>
-                   <ul>
-                       <li class="py-2">
-                           <a  href="">Kurslar</a>
-                       </li>
-                       <li class="py-2">
-                           <a  href="">Təlimçilər</a>
-                       </li>
-                       <li class="py-2">
-                           <a  href="">Kitab mağazası</a>
-                       </li>
-                       <li class="py-2">
-                           <a href="">Yaradıcılar</a>
-                       </li>
-                   </ul>
-               </div>
-               <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 foot-item">
-                   <h2>Kateqoriyalar</h2>
-                   <ul class="mt-3">
-                       <li>
-                           <a  href="">Kimya</a>
-                       </li>
-                       <li>
-                           <a  href="">Coğrafiya</a>
-                       </li>
-                       <li>
-                           <a  href="">Həndəsə və Riyaziyyat</a>
-                       </li>
-                       <li>
-                           <a  href="">İncəsənət və Sənətkarlıq</a>
-                       </li>
-                       <li>
-                           <a  href="">Computer Science</a>
-                       </li>
-                   </ul>
-               </div>
-               <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 foot-item">
-                   <h2>Bizimlə əlaqə saxlamaq</h2>
-                   <ul class="mt-3 ">
-                       <li class="d-flex">
-                           <a  href=""><i class="fa-brands fa-instagram"></i></a>
-                           <a  href="social.html">Inistagram səhifəsilə</a>
-                       </li>
-                       <li class="d-flex">
-                           <a  href=""><i class="fa-brands fa-facebook"></i></a>
-                           <a href="social.html">Facebook səhifəsilə</a>
-                       </li>
-                       <li class="d-flex">
-                           <a  href=""><i class="fa-brands fa-twitter"></i></a>
-                           <a  href="social.html">Twitter səhifəsilə</a>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-           <div class="row">
-    
-           </div>
+               <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
+                <h2>Səhifələrimiz</h2>
+                <ul>
+                    <li class="py-2">
+                        <a href="course.html">Kurslar</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="bookstore.html">Kitab mağazası</a>
+                    </li>
+                    <li class="py-2">
+                        <a href="about.html">Haqqımızda</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
+                <h2>Kateqoriyalar</h2>
+                <ul class="mt-3">
+                    <li>
+                        <a href="course.html">Kimya</a>
+                    </li>
+                    <li>
+                        <a href="course.html">Coğrafiya</a>
+                    </li>
+                    <li>
+                        <a href="course.html">Həndəsə və Riyaziyyat</a>
+                    </li>
+                    <li>
+                        <a href="course.html">İncəsənət və Sənətkarlıq</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
+                <h2>Bizimlə əlaqə saxlamaq</h2>
+                <ul class="mt-3 ">
+                    <li class="d-flex">
+                        <a href="contact.html"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="contact.html">Inistagram səhifəsilə</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="contact.html"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="contact.html">Facebook səhifəsilə</a>
+                    </li>
+                    <li class="d-flex">
+                        <a href="contact.html"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="contact.html">Twitter səhifəsilə</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
            <div class="col-xl-12  col-lg-12 col-sm-12 d-flex foot-sec">
                <div class="col-sm-6 col-xl-6 col-lg-6">
                    <p>
@@ -299,6 +297,40 @@
     }
     // Add listener
     mesBtn.addEventListener('click', addCommit)
+
+     // Inputs
+      const formEmail=document.getElementById('formİnp')
+   
+   // Register button
+    const regisBtn=document.getElementById('btnEmail')
+    
+    function addUser(){
+       set(ref(db, 'email/' + id),{
+           
+           Email:formEmail.value,
+         
+       })
+       .then(res=>{
+           console.log(res);
+           if (!(formEmail.value.includes('@')  )){
+              formEmail.style.border ='1px solid red !important';
+              formEmail.style.background='red';
+              formEmail.value=''
+              alert('düzgün email və parol daxil edin')
+           }
+           else{
+               window.location='login.html'
+           }
+ 
+           
+       })
+       .catch(err=>console.log(err))
+    }
+ 
+ 
+ 
+    //  Function ad button
+    regisBtn.addEventListener('click',addUser)
     </script>
 
 </body>

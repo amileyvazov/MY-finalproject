@@ -26,7 +26,8 @@
         <header>
           <div class="container-fluid">
             <div class="row">
-                <nav id="nav-bar" class="d-flex">
+ 
+                <nav id="nav-bar" class="d-flex col-12">
                     <div class="col-xl-2 col-lg-2 col-sm-2 justify-content-start">
                         <div class="logo">
                             <a class="d-flex" href="home.html">
@@ -58,56 +59,38 @@
                     </div>
                     <div class="icons d-flex col-xl-3 col-lg-3 col-sm-3  m-3">
                         <div  class="col-xl-2 col-lg-3 col-sm-3 ">
-                              
-                         <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                          </button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <span class="glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <input type="text">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                  <input type="text">
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
+                        <div  class="col-xl-2 col-lg-3 col-sm-3 ">
+                            <a class="shop" href=""><i class="fa-regular fa-heart"></i></a>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-sm-3  ">
-                             <!-- Button trigger modal -->
-                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                           </button>
-                          
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <input type="text">
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                            <a class="shop" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                               
+                           </div>
                         <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                             <a href="register.html">Qeydiyyatdan keç</a>
                         </div>
@@ -330,9 +313,9 @@
                     <div class="col-sm-6 col-md-6 col-xl-6">
                         <div class="video text-center">
                             <iframe  src="https://www.youtube.com/embed/B2vdCvl7SRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <svg width="100px" height="100px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.01024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm0 832a384 384 0 0 0 0-768 384 384 0 0 0 0 768zm-48-247.616L668.608 512 464 375.616v272.768zm10.624-342.656 249.472 166.336a48 48 0 0 1 0 79.872L474.624 718.272A48 48 0 0 1 400 678.336V345.6a48 48 0 0 1 74.624-39.936z"></path></g></svg>
+                            
                         </div>
-                     <div class="img-item"><img class="w-100" src="./img/Image-from-iOS.png" alt=""></div>
+                     
                     </div>
                 </div>
             </div>
@@ -370,100 +353,7 @@
             </div>
         </section>
         <section>
-            <div class="container-fluid">
-                <div class="row ">
-                    <div class="owl-carousel owl-theme text-center">
-                        <div class="item col-md-12  col-xl-12 col-lg-12 h-100 d-flex justify-content-between">
-                            <div class="col-sm-6 col-xl-5 col-lg-6 d-flex">
-                                <span><i class="fa-solid fa-quote-left color-red"></i></span>
-                                <img class="w-100 p-3" src="./img/img-student-2.png" alt="">
-                         </div>
-                        <div class="col-sm-5 col-xl-6 col-lg-6 m-4">
-                            <div class="col-12  m-4">
-                                <h4>Tələbələrimizin sözləri</h4>
-                                <h2>
-                                    Şagirdlərə hörmət
-                                </h2>
-                                <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus optio consectetur ut tempore illo, maiores possimus id blanditiis. Illum, voluptate velit labore ab neque quaerat consequatur sapiente minus quam inventore aliquid accusamus repudiandae, a iure fugiat in quia necessitatibus sed similique porro sequi doloremque debitis. Illum voluptate libero sunt non?
-                                </p>
-                                <div class="star-icon d-flex justify-content-between">
-                                    <h2><strong>Anne Bolden</strong>-<strong>Director</strong></h2>
-                                    <p >
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-
-                                    </p>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item col-md-12  col-xl-12 col-lg-12  d-flex">
-                            <div class="col-sm-6 col-xl-6 col-lg-6 my-4 ">
-                                <span><i class="fa-solid fa-quote-left"></i></span>
-                                <img class="w-100 p-3" src="./img/study-banner.webp" alt="">
-                              </div>
-                              <div class="col-sm-5 col-xl-5 col-lg-5 m-4">
-                                 <div class="col-12 m-4">
-                                     <h4>Tələbələrimizin sözləri</h4>
-                                     <h2>
-                                        Şagirdlərə hörmət
-                                     </h2>
-                                     <p>
-                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto sit tempora in debitis neque reprehenderit impedit illum aspernatur aliquid iste delectus, rem, sequi quo voluptate, repellendus earum natus cupiditate laudantium nemo culpa officiis quae! Voluptate doloremque similique earum architecto veniam sequi eos in, eum sapiente. Nulla aut soluta ab.
-                                     </p>
-                                     <div class="star-icon d-flex justify-content-between">
-                                        <h2><strong>Anne Bolden</strong>-<strong>Director</strong></h2>
-                                        <p >
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </p>
-                                        
-                                    </div>
-                                 </div>
-                              </div>
-                        </div>
-                        <div class="item col-md-12  col-xl-12 col-lg-12 h-100 d-flex">
-                            <div class="col-sm-6 col-xl-6 col-lg-6 m-4">
-                                <span><i class="fa-solid fa-quote-left"></i></span>
-                                <img class="w-100 p-3" src="./img/student-png-currents.png" alt="">
-                              </div>
-                              <div class="col-sm-5 col-xl-5 col-lg-5 mx-4">
-                                 <div class="col-12 m-4">
-                                     <h4>Tələbələrimizin sözləri</h4>
-                                     <h2>
-                                        Şagirdlərə hörmət
-                                     </h2>
-                                     <p>
-                                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod id cum soluta eveniet commodi quia animi maxime cupiditate unde laudantium facilis dolorum deleniti enim perferendis quidem nemo fugit explicabo debitis rem itaque, laborum sunt! Placeat fuga repellat, saepe nam rerum consequatur dignissimos voluptates doloribus, veritatis porro animi, laboriosam incidunt.
-                                     </p>
-                                     <div class="star-icon d-flex justify-content-between">
-                                        <h2><strong>Anne Bolden</strong>-<strong>Director</strong></h2>
-                                        <p >
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            
-                                        </p>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                        </div>
-
-                    </div>
-                   </div>
-                </div>
-            </div>
+            
         </section>
         <section>
             <div class="container-fluid my-5">
@@ -482,7 +372,11 @@
         </main>
         <footer>
          <div class="container-fluid text-white">
-            <div class="row">
+            <div class="row"><div class="foot-inp d-flex">
+                <input id="formİnp" type="text" class="form-control form-control-user m-2" placeholder="Emailinizi daxil edin">
+                <button id="btnEmail" class="btn btn-danger col-6 m-2">Daxil et</button>
+            </div>
+                
                 <div class="col-sm-12 col-xl-12 col-lg-12 d-flex ">
                     <div class="col-sm-3 col-xl-3 col-lg-3">
                         <div class="logo mt-4">
@@ -502,19 +396,16 @@
                         </div>
                     </div>
                     <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
-                        <h2>Haqqında</h2>
+                        <h2>Səhifələrimiz</h2>
                         <ul>
                             <li class="py-2">
-                                <a href="">Kurslar</a>
+                                <a href="course.html">Kurslar</a>
                             </li>
                             <li class="py-2">
-                                <a href="">Təlimçilər</a>
+                                <a href="bookstore.html">Kitab mağazası</a>
                             </li>
                             <li class="py-2">
-                                <a href="">Kitab mağazası</a>
-                            </li>
-                            <li class="py-2">
-                                <a href="">Yaradıcılar</a>
+                                <a href="about.html">Haqqımızda</a>
                             </li>
                         </ul>
                     </div>
@@ -522,42 +413,40 @@
                         <h2>Kateqoriyalar</h2>
                         <ul class="mt-3">
                             <li>
-                                <a href="">Kimya</a>
+                                <a href="course.html">Kimya</a>
                             </li>
                             <li>
-                                <a href="">Coğrafiya</a>
+                                <a href="course.html">Coğrafiya</a>
                             </li>
                             <li>
-                                <a href="">Həndəsə və Riyaziyyat</a>
+                                <a href="course.html">Həndəsə və Riyaziyyat</a>
                             </li>
                             <li>
-                                <a href="">İncəsənət və Sənətkarlıq</a>
+                                <a href="course.html">İncəsənət və Sənətkarlıq</a>
                             </li>
-                            <li>
-                                <a href="">Computer Science</a>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xl-3 col-lg-3 mt-3 ">
                         <h2>Bizimlə əlaqə saxlamaq</h2>
                         <ul class="mt-3 ">
                             <li class="d-flex">
-                                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                <a href="social.html">Inistagram səhifəsilə</a>
+                                <a href="contact.html"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="contact.html">Inistagram səhifəsilə</a>
                             </li>
                             <li class="d-flex">
-                                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                                <a href="social.html">Facebook səhifəsilə</a>
+                                <a href="contact.html"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="contact.html">Facebook səhifəsilə</a>
                             </li>
                             <li class="d-flex">
-                                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                <a href="social.html">Twitter səhifəsilə</a>
+                                <a href="contact.html"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="contact.html">Twitter səhifəsilə</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-xl-12 col-lg-12 d-flex foot-sec">
+                <div class="row foot-sec">
                     <div class="col-sm-6 col-xl-6 col-lg-6">
                         <p>
                             © 2023 LEARNTEACH EDUCATION COMPANY.
@@ -566,7 +455,7 @@
                     </div>
                     <div class="col-sm-6 col-xl-6 col-lg-6 d-flex">
                         <div class="col-4">
-                            <img class="w-25" src="./img/pngimg.com - mastercard_PNG1.png" alt="">
+                            <img class="w-25 " src="./img/pngimg.com - mastercard_PNG1.png" alt="">
                         </div>
                         <div class="col-4">
                             <img class="w-25" src="./img/Visa-Logo-PNG-Image.png" alt="">
@@ -624,14 +513,17 @@
                     const el = datas[key];
                     dataaRow.innerHTML +=` 
                     <div class="col-sm-12 col-lg-3 col-xl-3 book-item">
-                       <div class="book-img"><img class="w-100" src="${el.Image}" alt=""></div>
+                       <div class="book-img">
+                        <a class="shop m-1 rounded-circle" href=""><i class="fa-regular fa-heart"></i></a>
+                        <img class="w-100" src="${el.Image}" alt="">
+                        </div>
                         <div class="book-text">
                          <h2>${el.Name}</h2>
                          <p>${el.Text}</p>
                         </div>
                         <div class="btn-book d-flex justify-content-between">
                             <span class="fs-3"> ${el.Price} <s>$15</s></span>
-                            <button >Səbətə əlavə et</button>
+                            <button ><i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə et</button>
                         </div>
                     </div>
                    `
@@ -651,16 +543,19 @@
                for (const key in datas) {
                        const ele = datas[key];
                           rowCard.innerHTML +=`
-                          <div class="col-sm-12 card col-xl-4 col-lg-4 course">
-                            <div class="course-img"><img class="w-100" src="${ele.İmage}" alt=""></div>
+                          <div class="col-sm-12  col-xl-4 col-lg-4 card">
+                            <div class="card-img">
+                                <a class="shop m-2" href=""><i class="fa-regular fa-heart"></i></a>
+                                <img class="w-100" src="${ele.İmage}" alt="">
+                            </div>
                             <div class="card-body">
                                
-                              <div class="course-text">
+                              <div class="card-text">
                                <h2>${ele.Name}<h2>
                                <p>${ele.Text}<p>
                                </div>
-                              <div class="course-foot d-flex justify-content-between">
-                               <div class="course-price">
+                              <div class="card-foot d-flex justify-content-between">
+                               <div class="card-price">
                                    <span class="d-flex  py-3 fs-5"> 
                                    <i class="fa-solid fa-0 px-2"></i> 
                                    <i class="fa-regular fa-star"></i>
@@ -672,8 +567,8 @@
                                    </span>
                                    <a >$${ele.Price}</a>
                                </div>
-                               <div class="course-btn2 d-flex justify-content-end">
-                               <button>Karta əlavə edin</button>
+                               <div class="card-btn d-flex justify-content-end">
+                               <button><i class="fa-solid fa-cart-shopping"></i> Səbətə əlavə edin</button>
                                </div>
                               </div>
                              </div>
@@ -685,6 +580,42 @@
            .catch(err=> console.log(err))
          }
          getCourse()
+
+        //  Email foot add
+
+            // Inputs
+    const userEmail=document.getElementById('formİnp')
+  
+    // Register button
+     const regisBtn=document.getElementById('btnEmail')
+     
+     function addUser(){
+        set(ref(db, 'email/' + id),{
+            
+            Email:userEmail.value,
+          
+        })
+        .then(res=>{
+            console.log(res);
+            if (!(userEmail.value.includes('@')  )){
+               userEmail.style.border ='1px solid red !important';
+               userEmail.style.background='red';
+               userEmail.value=''
+               alert('düzgün email və parol daxil edin')
+            }
+            else{
+                window.location='login.html'
+            }
+
+            
+        })
+        .catch(err=>console.log(err))
+     }
+
+
+
+    //  Function ad button
+    regisBtn.addEventListener('click',addUser)
         </script>
 
         <!-- Owl js -->

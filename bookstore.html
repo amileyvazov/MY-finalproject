@@ -56,7 +56,7 @@
                               
                         <!-- Button trigger modal -->
                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                           <i class="fa-solid fa-magnifying-glass"></i>
+                           <span class="glass"><i class="fa-solid fa-magnifying-glass"></i></span>
                          </button>
                          
                          <!-- Modal -->
@@ -78,30 +78,12 @@
                            </div>
                          </div>
                        </div>
+                       <div  class="col-xl-2 col-lg-3 col-sm-3 ">
+                        <a class="shop" href=""><i class="fa-regular fa-heart"></i></a>
+                       </div>
                        <div class="col-xl-2 col-lg-3 col-sm-3  ">
-                            <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                           <i class="fa-solid fa-cart-shopping"></i>
-                          </button>
-                         
-                         <!-- Modal -->
-                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                             <div class="modal-content">
-                               <div class="modal-header">
-                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                               </div>
-                               <div class="modal-body">
-                                 <input type="text">
-                               </div>
-                               <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                 <button type="button" class="btn btn-primary">Save changes</button>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
+                        <a class="shop" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                           
                        </div>
                     <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                         <a href="register.html">Qeydiyyatdan keç</a>
@@ -119,31 +101,6 @@
     </div>
 </header>
 <main>
-    <section>
-        <div class="container ">
-            <div class="row mt-5 bg-light">
-             <div class="col-xl-5 col-lg-5 col-sm-5 ">
-             
-             </div>
-             <div class="col-xl-5 col-lg-5 col-sm-5 ">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Varsayılan çeşidləmə</button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-item" href="#">Populyarlığa görə sırala</a></li>
-                      <li><a class="dropdown-item" href="#">Orta reytinqə görə sırala</a></li>
-                      <li><a class="dropdown-item" href="#">Ən son versiyaya görə sırala</a></li>
-                      <li><a class="dropdown-item" href="#">Qiymətə görə çeşidləmə: aşağıdan yüksəkə</a></li>
-                      <li><a class="dropdown-item" href="#">Qiymətə görə çeşidləmə: yüksəkdən aşağıya</a></li>
-                    </ul>
-                  </div>
-             </div>
-             <div class="col-xl-5 col-lg-5 col-sm-5 ">
-                <a href=""></a>
-             </div> 
-            </div>
-        </div>
-    </section>
     <section id="books">
         <div class="container">
             <div class="row" id="dataRow">
@@ -296,7 +253,10 @@
                     const el = datas[key];
                        dataaRow.innerHTML +=`
                        <div class="col-sm-12 col-lg-3 col-xl-3 book-item">
-                       <div class="book-img"><img class="w-100" src="${el.Image}" alt=""></div>
+                       <div class="book-img">
+                        <a class="shop m-2" href=""><i class="fa-regular fa-heart"></i></a>
+                        <img class="w-100" src="${el.Image}" alt="">
+                        </div>
                         <div class="book-text">
                          <h2>${el.Name}</h2>
                          <p>${el.Text}</p>

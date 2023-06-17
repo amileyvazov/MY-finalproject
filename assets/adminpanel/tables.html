@@ -10,7 +10,7 @@
     <meta name="author" content="">
     
     
-    <title>Kurslar səhifəsi</title>
+    <title>Cədvəllər</title>
     <link rel="shortcut icon" href="/img/real estate.png" type="image/x-icon">
 
     <!-- fon-aüesom -->
@@ -65,7 +65,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-book-open-reader"></i>
-                    <span>Komponentlər</span>
+                    <span>Saytın komponentləri</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -82,7 +82,7 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Elementləri yeniləmək</span>
+                    <span > Elementləri yeniləmək</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
@@ -354,84 +354,90 @@
                 </nav>
                 <!-- End of Topbar -->
 
-              
-                    <!-- Content Row -->
-                    <div class="row">
+                <!-- Content Row -->
+                <div class="row">
 
                         
 
-                        <div class="col-lg-12 mb-4">
+                    <div class="col-lg-12 col-xl-12 mb-4">
 
-                            <!-- Course created -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Kurslar yaratmaq</h6>
-                                </div>
-                               <div class="row">
-                                <div class="col-xl-12 col-sm-12 col-lg-12 my-5">
-                                    <div class="input-group mb-3 col-xl-12 col-sm-12 col-lg-12">
-                                        <label class="w-25 text-center fs-4 fs-normal" for="input-group-text">Kursun şəkili</label>
-                                        <input id="courseAvatar" type="text"  class="input-group-text form-control" >
-                                        
-                                    </div>
-                                    
-                                    <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-3">
-                                        <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kursun Adı</label>
-                                        <input id="courseName" class="input-group form-control form-control-user"  type="text">
-        
-                                    </div>
-                                    <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-2">
-                                        <label class="w-25 text-center fs-2 fs-normal" for="input-group">Kursun məzmunu</label>
-                                        <input id="courseText" class="input-group form-control form-control-user m-2" style="height: 100px;" type="text">
-        
-                                    </div>
-                                    <div class="col-xl-12 col-sm-12 col-lg-12 d-flex my-3 ">
-                                        <label class="w-25 text-center fs-4 fs-normal" for="input-group">Kursun qiyməti</label>
-                                        <input id="coursePrice" class="input-group form-control form-control-user" type="text">
-        
-                                    </div>
-                                    <div class="my-4 col-xl-12 col-sm-12 col-lg-12 text-center d-flex justify-content-between p-4">
-                                        <button id="add" class="btn-warning w-100">Yarat</button>
-                                      
-                                    </div>
-                                </div>
-                               </div>
-                            </div>
+                        <!-- Color System -->
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Yaratdiğım Kurslar</h6>
+                        </div>
+                        <div class="row">
+                            <table id="course" class="table">
+                                <thead>
+                                    <tr>
+                                      <th scope="col-1">#</th>
+                                      <th scope="col-2">Kursun şəkilləri</th>
+                                      <th scope="col-2">Kursun adları</th>
+                                      <th scope="col">Kursun məzmunu</th>
+                                      <th scope="col-1">Kursun qiyməti</th>
+                                      <th scope="col-2">Kursu redaktə etmək</th>
+                                    </tr>
+                                  </thead>
+                                  
+                              </table>
+                        </div>
 
-                             <!-- Color System -->
-                             <div class="row col-7">
+                        
+                    </div>
+                </div>
+
+            </div>
+                   
+                    
+              <!-- Content Row -->
+                    <!-- Approach -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="books">
+    
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Yaratdiğım Kurslar</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Yaratdığım kitablar</h6>
                                 </div>
-                                <div class="row">
-                                    <table class="table">
-                                       
+                                <div class="book-body  ">
+                                    <table class="table m-3">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Kitabları şəkilləri</th>
+                                            <th scope="col">Kitabların adları</th>
+                                            <th scope="col">Kitabların məzmunları</th>
+                                            <th scope="col">Kitabların qiyməti </th>
+                                            <th scope="col">Kitabları redaktə etmək</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          
+                                          
                                       </table>
                                 </div>
                             </div>
-
-
-                            
                         </div>
+
                     </div>
 
                 </div>
-                <!-- /.container-fluid -->
+    
 
+                     
+               
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
+            
         </div>
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Your Website 2021</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
         <!-- End of Content Wrapper -->
 
     </div>
@@ -535,8 +541,39 @@
          .then(alert("kitab silindi"))
          .catch(err=>console.log(err))
       }
-     
-         const dataaRow=document.querySelector('.book-body')
+      function getCourse(){
+           get(ref(db,'course/'))
+           .then(data=>{
+               const rowCard=document.querySelector('#course')
+               let datas=data.val()
+               for (const key in datas) {
+                       const ele = datas[key];
+                          rowCard.innerHTML +=`
+                          <tbody>
+                                    <tr>
+                                      <th scope="row">${ele.id}</th>
+                                      <td><img class="w-100" src="${ele.İmage}" alt=""></td>
+                                      <td>${ele.Name}</td>
+                                      <td><p class="fw-6 ">${ele.Text}</p></td>
+                                      <td>${ele.Price}</td>
+                                      <td class="d-flex">
+                                          <button type="button" class="btn btn-primary m-2">Detallar</button>
+                                          <button id="edit" class="btn-primary m-2 ">Yenilə</button>
+                                           <button id="delete" class="btn-danger m-2">Sil</button>
+
+                                          </td>
+                                    </tr>
+                                   
+                                  </tbody>
+                          ` 
+               }
+              
+           })
+           .catch(err=> console.log(err))
+         }
+         getCourse()
+
+         const dataaRow=document.querySelector('.table tbody')
        function bookItem(){
         get(ref(db,'books/'))
         .then(data=>{
@@ -544,19 +581,19 @@
             for (const key in datas) {
                     const el = datas[key];
                     dataaRow.innerHTML +=` 
-                    <div class="col-xl-4 col-sm-12 col-lg-4 book-item">
-                       <div class="book-img"><img class="w-100" src="${el.Image}" alt=""></div>
-                        <div class="book-text">
-                         <h2 class="fs-6">${el.Name}</h2>
-                         <p class="fs-6">${el.Text}</p>
-                         <span class="fs-3"> ${el.Price} <s>$15</s></span>
-                        </div>
-                        <div class="btn-book d-flex justify-content-between">
-                            <button id="bookdetails" class="btn-warning w-100">Detallar</button>
-                            <button id="bookedit" class="btn-primary w-100">Yenilə</button>
-                            <button id="bookdelete" class="btn-danger w-100" type="button" class="btn btn-danger "><i class="fa-solid fa-xmark"></i></button>
-                        </div>
-                    </div>
+                    <tr>
+                       <th scope="row">${el.id}</th>
+                        <td><img class="w-100" src="${el.Image}" alt=""></td>
+                       <td>${el.Name}</td>
+                       <td><p>${el.Text}</p></td>
+                        <td><p> ${el.Price}<s>$15</s></td>
+                        <td class="d-flex">
+                           <button id="bookdetails" class="btn-warning m-2 ">Detallar</button>
+                            <button id="bookedit" class="btn-primary m-2 ">Yenilə</button>
+                            <button id="bookdelete" class="btn-danger m-2" type="button" class="btn btn-danger "><i class="fa-solid fa-xmark"></i></button>
+                        </td>
+                      
+                   </tr>  
                    `
             }
            
@@ -564,6 +601,7 @@
         .catch(err=> console.log(err))
        }
        bookItem()
+
 
      // Btns addEvenlistener 
      bookCreate.addEventListener('click', instalBook)

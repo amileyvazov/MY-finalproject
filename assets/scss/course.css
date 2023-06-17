@@ -34,6 +34,7 @@ header {
 }
 
 #nav-bar {
+  align-items: center;
   width: 100%;
   position: fixed;
   background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)) rgba(236, 10, 6, 0.7333333333);
@@ -92,6 +93,32 @@ a {
 }
 .singup:hover {
   color: rgba(2, 134, 222, 0.904);
+}
+
+.shop {
+  align-items: center;
+  font-size: 1rem;
+  background-color: rgba(2, 134, 222, 0.904);
+  padding: 10px;
+  position: absolute;
+  color: #fff;
+  border-radius: 5px;
+}
+.shop i:hover {
+  color: rgba(236, 10, 6, 0.7333333333);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.glass i {
+  align-items: center;
+  font-size: 1rem;
+  padding: 7px 0;
+}
+.glass i:hover {
+  color: rgba(236, 10, 6, 0.7333333333);
+  transition: 1s ease;
+  cursor: pointer;
 }
 
 footer {

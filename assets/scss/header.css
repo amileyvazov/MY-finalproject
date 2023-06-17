@@ -51,12 +51,16 @@ h5 {
 }
 
 header {
-  background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)), rgba(236, 10, 6, 0.7333333333);
-  width: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+  filter: blur(12, 22, 2, 2);
+  background: linear-gradient(rgba(174, 175, 174, 0.37), rgba(196, 193, 193, 0.363)), url(https://img.freepik.com/premium-vector/welcome-back-school-background_3589-817.jpg?w=2000);
   height: 100vh;
+  background-attachment: fixed;
 }
 
 #nav-bar {
+  align-items: center;
   width: 100%;
   position: fixed;
   background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)) rgba(236, 10, 6, 0.7333333333);
@@ -103,14 +107,15 @@ a {
 .singup {
   border: 2px solid transparent;
   border-radius: 35px;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: sans-serif;
   font-weight: 500;
   background-color: rgba(2, 134, 222, 0.904);
 }
 .singup a {
   display: flex;
+  text-align: center;
+  padding: 10px 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -205,11 +210,15 @@ a {
 }
 
 .head-img .img img {
+  position: static;
   border: 1px solid transparent;
   border-radius: 20px;
-  background: linear-gradient(rgba(245, 242, 242, 0.233), rgb(235, 229, 229));
+  background: linear-gradient(transparent, transparent);
   width: 100%;
-  height: 79vh;
+  height: 75vh;
+}
+.head-img .img img:hover {
   transition: 2s;
-  transform: rotate(-2deg);
+  transform: rotate(-5deg);
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

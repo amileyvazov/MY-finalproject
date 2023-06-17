@@ -46,6 +46,7 @@ header{
 }
 
 #nav-bar{
+    align-items: center;
     width: 100%;
     position:fixed;
     background:linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)) $homecolor;

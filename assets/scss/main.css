@@ -131,35 +131,37 @@ body {
 .card {
   border-radius: 15px;
   margin: 5%;
-  position: relative;
-  z-index: -1;
+  position: static;
 }
 .card:hover {
-  color: #000;
-  background: rgba(236, 10, 6, 0.7333333333);
-  transition: 2s ease;
+  color: #fff;
   cursor: pointer;
+  transition: 1s;
+  background-color: rgba(236, 10, 6, 0.7333333333);
+  font-size: 1rem;
 }
 .card .card-img img {
   padding: 10px;
   border-radius: 15px;
 }
-.card .card-body h2 {
+
+.card-body h2 {
   font-size: 1.3rem;
   font-family: sans-serif;
   font-weight: 500;
   padding: 10px 0;
 }
-.card .card-body p {
+.card-body p {
   font-size: 1rem;
   font-weight: 600;
   font-family: sans-serif;
   padding: 10px 0;
 }
-.card .card-foot .card-price {
+
+.card-foot .card-price {
   padding: 10px 0;
 }
-.card .card-foot .card-price a {
+.card-foot .card-price a {
   text-decoration: none;
   font-size: 1.9rem;
   font-family: sans-serif;
@@ -167,34 +169,30 @@ body {
   padding: 15px;
   color: #000;
 }
+.card-foot .card-price span i {
+  color: rgb(218, 233, 2);
+}
 
 .card-btn button {
-  border-radius: 10px;
-  font-size: 1rem;
+  background-color: rgba(2, 134, 222, 0.904);
+  border-radius: 25px;
+  font-size: 0.8rem;
   font-weight: 500;
-  padding: 10px;
+  padding: 10ppx;
+  border: 1px solid transparent;
 }
 .card-btn button:hover {
-  display: block;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  border: 1px solid #000;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 1s;
-  background-color: rgba(2, 134, 222, 0.904);
+  transition: 1s ease;
+  color: #fff;
 }
 
 .card-foot .card-price a {
   color: #fff;
 }
 
-.video {
-  position: relative;
-}
 .video iframe {
-  position: absolute;
+  position: static;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -203,18 +201,7 @@ body {
   width: 639px;
   height: 427px;
   margin: 4px;
-  z-index: 0;
-}
-.video svg {
-  top: 50%;
-  left: 50%;
-  right: 50%;
-  position: absolute;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .foot-btn {
@@ -232,6 +219,9 @@ body {
   padding: 10px;
 }
 
+.owl-carousel {
+  height: 100vh;
+}
 .owl-carousel .item {
   border: 1px solid #fff;
   background-color: rgba(236, 10, 6, 0.7333333333) !important;
@@ -277,6 +267,32 @@ body {
 }
 .owl-carousel .owl-dots .owl-dot span cursor span {
   width: 40px;
+}
+
+.shop {
+  align-items: center;
+  font-size: 1rem;
+  background-color: rgba(2, 134, 222, 0.904);
+  padding: 10px;
+  position: absolute;
+  color: #fff;
+  border-radius: 5px;
+}
+.shop i:hover {
+  color: rgba(236, 10, 6, 0.7333333333);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.glass i {
+  align-items: center;
+  font-size: 1rem;
+  padding: 7px 0;
+}
+.glass i:hover {
+  color: rgba(236, 10, 6, 0.7333333333);
+  transition: 1s ease;
+  cursor: pointer;
 }
 
 footer {
@@ -395,39 +411,4 @@ footer p {
   border-radius: 25px;
   padding: 15px;
   border: 1px solid transparent;
-}
-
-.course {
-  font-family: sans-serif;
-  font-weight: 500;
-  border-radius: 20px;
-}
-.course:hover {
-  background: rgba(236, 10, 6, 0.7333333333);
-  cursor: pointer;
-  color: rgba(2, 134, 222, 0.904);
-}
-.course .course-img {
-  padding: 10px;
-}
-.course .course-img img {
-  border-radius: 20px;
-}
-
-.course-price span i {
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgb(218, 233, 2);
-}
-.course-price a {
-  font-size: 1.5rem;
-}
-
-.course-btn2 button {
-  cursor: pointer;
-  font-family: sans-serif;
-  font-weight: 500;
-  border-radius: 20px;
-  background: rgba(2, 134, 222, 0.904);
-  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

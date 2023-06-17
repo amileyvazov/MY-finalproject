@@ -1,25 +1,20 @@
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    autoTime:true,
-    TimeRanges:1000,
     responsiveClass:true,
     responsive:{
-   0:{
-       items:1,
-       loop:true,
-       autoTime:true,
-       
-   },
-   600:{
-       items:1,
-       loop:true,
-       autoTime:true,
-   },
-   1000:{
-    items:1,
-    loop:true,
-    autoTime:1000,
-},
-   }
-  })
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:true
+        }
+    }
+})
