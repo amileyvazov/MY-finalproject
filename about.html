@@ -15,6 +15,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
      <!--  Sass css-->
+     <link rel="stylesheet" href="./assets/scss/shop.css">
+     <link rel="stylesheet" href="./assets/scss/shop.css.map">
 </head>
 <body>
     <header>
@@ -51,12 +53,57 @@
                         </div>
                     </div>
                     <div class="icons d-flex col-xl-3 col-lg-3 col-sm-3  m-3">
-                        <div class="col-xl-2 col-lg-3 col-sm-3 ">
-                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-sm-3  ">
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
+                        <div  class="col-xl-2 col-lg-3 col-sm-3 ">
+                              
+                            <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               <i class="fa-solid fa-magnifying-glass"></i>
+                             </button>
+                             
+                             <!-- Modal -->
+                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                 <div class="modal-content">
+                                   <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                     <input type="text">
+                                   </div>
+                                   <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                     <button type="button" class="btn btn-primary">Save changes</button>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="col-xl-2 col-lg-3 col-sm-3  ">
+                                <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               <i class="fa-solid fa-cart-shopping"></i>
+                              </button>
+                             
+                             <!-- Modal -->
+                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                 <div class="modal-content">
+                                   <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                     <input type="text">
+                                   </div>
+                                   <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                     <button type="button" class="btn btn-primary">Save changes</button>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
                         <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                             <a href="register.html">Qeydiyyatdan keç</a>
                         </div>

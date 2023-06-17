@@ -28,7 +28,7 @@ header {
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
-  background: linear-gradient(rgba(71, 71, 71, 0.5), rgba(78, 78, 78, 0.5)), url(https://img.freepik.com/premium-photo/educational-concept-books-blue_387680-275.jpg);
+  background: linear-gradient(rgba(71, 71, 71, 0.5), rgba(78, 78, 78, 0.5)), url(https://png.pngtree.com/thumb_back/fh260/back_our/20190622/ourmid/pngtree-creative-synthesis-simple-book-education-and-training-background-image_219497.jpg);
   width: 100%;
   height: 100vh;
 }
@@ -94,59 +94,6 @@ a {
   color: rgba(2, 134, 222, 0.904);
 }
 
-.book-item {
-  border: 1px solid transparent;
-  border-radius: 20px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  margin: 40px;
-  padding: 10px;
-}
-.book-item:hover {
-  background: rgba(236, 10, 6, 0.7333333333);
-  cursor: pointer;
-  color: #fff;
-}
-.book-item .book-img img {
-  border-radius: 20px;
-  height: 200px;
-}
-.book-item .book-text {
-  transform: translate(20px 100px);
-}
-.book-item .book-text h2 {
-  padding: 15px 0;
-  font-size: 1rem;
-  font-family: sans-serif;
-}
-.book-item .book-text p {
-  font-size: 0.8rem;
-  font-family: sans-serif;
-  padding: 10px 0 0 0;
-}
-.book-item .btn-book {
-  margin: 10pz 0;
-}
-.book-item .btn-book span {
-  font-size: 1.5rem;
-  font-family: sans-serif;
-  font-weight: 500;
-}
-.book-item .btn-book button {
-  background: rgba(2, 134, 222, 0.904);
-  border-radius: 25px;
-  padding: 15px;
-  border: 1px solid transparent;
-}
-
-#icon a {
-  color: #fff;
-  padding: 10px;
-  font-size: 200%;
-}
-
 footer {
   bottom: 0;
   background-color: #200355;
@@ -189,4 +136,4 @@ footer h2 {
 .text h2 {
   font-weight: 700;
   font-size: 2.5rem;
-}/*# sourceMappingURL=shop.css.map */
+}/*# sourceMappingURL=course.css.map */

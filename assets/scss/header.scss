@@ -92,7 +92,11 @@ header{
     }
 }
 .logo{
+
     a{
+        svg{
+            color: $fon-color;
+        }
         text-decoration: none;
         h2{
             font-size: var(--card-paddong);
@@ -129,7 +133,7 @@ a{
 }
 
 .head-section{
-    margin: 10%;
+    margin: 10% ;
     .head-text{
         color: $text-color;
         h5{
@@ -188,7 +192,7 @@ a{
 }
 
 .hed1-sec{
-    padding: 10px;
+    padding: 10px ;
     a{
         color: $text-color;
         font-size:$font-size;
@@ -225,7 +229,7 @@ a{
             width: 100%;
             height: 79vh;
             transition: 2s;
-            transform: rotate(3deg);
+            transform: rotate(-2deg);
         }
         
     }

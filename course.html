@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bizimlə əlaqə saxlayın</title>
+    <title>Kurslar</title>
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- SASS css -->
+    <link rel="stylesheet" href="./assets/scss/course.css">
+    <link rel="stylesheet" href="./assets/scss/course.css.map">
    
 </head>
 <body>
@@ -42,18 +44,63 @@
                                 <a href="bookstore.html">Kitab mağazası</a>
                                </li>
                                <li>
-                                <a href="contact.hml">Bizimlə əlaqə</a>
+                                <a href="./contact.html">Bizimlə əlaqə</a>
                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="icons d-flex col-xl-3 col-lg-3 col-sm-3  m-3">
-                        <div class="col-xl-2 col-lg-3 col-sm-3 ">
-                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </div>
-                        <div class="col-xl-2 col-lg-3 col-sm-3  ">
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
+                        <div  class="col-xl-2 col-lg-3 col-sm-3 ">
+                              
+                            <!-- Button trigger modal -->
+                             <button id="" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               <i class="fa-solid fa-magnifying-glass"></i>
+                             </button>
+                             
+                             <!-- Modal -->
+                             <div id="myInput" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                 <div class="modal-content">
+                                   <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                     <input type="text">
+                                   </div>
+                                   <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                     <button type="button" class="btn btn-primary">Save changes</button>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <div class="col-xl-2 col-lg-3 col-sm-3  ">
+                                <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                               <i class="fa-solid fa-cart-shopping"></i>
+                              </button>
+                             
+                             <!-- Modal -->
+                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog">
+                                 <div class="modal-content">
+                                   <div class="modal-header">
+                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                   </div>
+                                   <div class="modal-body">
+                                     <input type="text">
+                                   </div>
+                                   <div class="modal-footer">
+                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                     <button type="button" class="btn btn-primary">Save changes</button>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
                         <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                             <a href="register.html">Qeydiyyatdan keç</a>
                         </div>
@@ -61,40 +108,19 @@
                 
                 </nav>
             </div>
-            <div class="row">
-                <div class="owl-carousel owl-theme">
-                    
-                    <div class="item">
-                        
-                        <div class="col-12">
-                            <div class="item-body">
-    
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        
-                        <div class="col-12">
-                            <div class="item-body">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="col-12">
-                            <div class="item-body">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-    
-                </div>
+            <div class="row text-center">
+             <div class="text">
+                <h4>Bütün kurslar burada</h4>
+                 <h2>İstədiyinizi tapa bilərsiniz</h2>
+             </div>   
+            
             </div>
         </div>
     </header>
     <main>
-
+      <section>
+        
+      </section>
     </main>
     <footer>
         <div class="container-fluid text-white">
@@ -205,8 +231,16 @@
         
    <!-- Owl-carousel -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <!-- javascript tags -->
+  <script>
+    var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.hidde()
+})
+  </script>
 </body>
 </html>

@@ -125,17 +125,27 @@
             Password:userPasword.value,
             Correcpass:corretPassword.value
         })
-        .then(data=>{
-            if(!data.ok){
-                userName.value==' ',
-                userSurname.value=' ',
-               userEmail.value==' ',
-                userPasword.value=='',
-               corretPassword.value==' '
+        .then(res=>{
+            console.log(res);
+            if (!(userEmail.value.includes('@') && userPasword.value.length>=8 )){
+               userEmail.style.border ='1px solid red !important';
+               userEmail.style.background='red';
+               userPasword.style.border='1px solid red !important';
+               userPasword.style.background='red';
+               corretPassword.style.background='red'
+               userName.value=''
+               userSurname.value=''
+               userEmail.value=''
+               userPasword.value=''
+               corretPassword.value=''
+               alert('düzgün email və parol daxil edin')
             }
+            else{
+                window.location='login.html'
+            }
+
             
         })
-        .then(alert('Xoş gəlmisiniz'))
         .catch(err=>console.log(err))
      }
 

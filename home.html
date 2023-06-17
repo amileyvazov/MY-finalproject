@@ -11,14 +11,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <!-- bootstrap5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!-- Owl-carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
         <!-- SASS css -->
         <link rel="stylesheet" href="./assets/scss/main.css">
         <link rel="stylesheet" href="./assets/scss/main.css.map">
         <link rel="stylesheet" href="./assets/scss/header.css">
         <link rel="stylesheet" href="./assets/scss/header.css.map">
-        <!-- Owl-carousel -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
@@ -49,17 +51,62 @@
                                 <a href="bookstore.html">Kitab mağazası</a>
                                </li>
                                <li>
-                                <a href="contact.hml">Bizimlə əlaqə</a>
+                                <a href="contact.html">Bizimlə əlaqə</a>
                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="icons d-flex col-xl-3 col-lg-3 col-sm-3  m-3">
-                        <div class="col-xl-2 col-lg-3 col-sm-3 ">
-                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <div  class="col-xl-2 col-lg-3 col-sm-3 ">
+                              
+                         <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <input type="text">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-sm-3  ">
-                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                             <!-- Button trigger modal -->
+                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                           </button>
+                          
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <input type="text">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                             <a href="register.html">Qeydiyyatdan keç</a>
@@ -237,7 +284,7 @@
         <section >
             <div class="container">
                 <div id="card-sec" class="row ">
-                   <div class="col-12">
+                   <div class="col-sm-12 col-md-12 col-xl-12">
                        <div class="sec-head text-center m-5">
                            <h4>Həftəlik Yeni Kurslar</h4>
                            <h2>Hazırlanmış Yeni Kurslar</h2>
@@ -253,7 +300,7 @@
         <section>
             <div class="container-fluid ">
                 <div class="row  justify-content-between bg-light">
-                    <div class="col-6">
+                    <div class="col-xl-6 col-md-6 col-sm-12">
                         <h4>Canlı öyrənin</h4>
                         <h2>Birbaşa onlayn sessiyalar</h2>
                         <p>At in tellus integer feugiat scelerisque varius. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Vitae purus faucibus ornare suspendisse sed nisi lacus. In egestas erat imperdiet sed euismod. Donec pretium vulputate sapien nec sagittis gceleriste.</p>
@@ -280,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6 col-md-6 col-xl-6">
                         <div class="video text-center">
                             <iframe  src="https://www.youtube.com/embed/B2vdCvl7SRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             <svg width="100px" height="100px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000" stroke-width="0.01024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M512 64a448 448 0 1 1 0 896 448 448 0 0 1 0-896zm0 832a384 384 0 0 0 0-768 384 384 0 0 0 0 768zm-48-247.616L668.608 512 464 375.616v272.768zm10.624-342.656 249.472 166.336a48 48 0 0 1 0 79.872L474.624 718.272A48 48 0 0 1 400 678.336V345.6a48 48 0 0 1 74.624-39.936z"></path></g></svg>
@@ -294,7 +341,7 @@
         <section>
             <div class="container-fluid">
                 <div class="row bg-light justify-content-between">
-                    <div class="col-6 sec-post">
+                    <div class="col-sm-6 col-md-6 col-xl-6 sec-post">
                         <h4>Niyə bizim</h4>
                         <h2>Ən yaxşı nailiyyətlərimiz</h2>
                         <p>Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Mauris a diam maecenas sed. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Massa tincidunt nunc pulvinar sapien et.</p>
@@ -316,7 +363,7 @@
                         </div>
                         
                     </div>
-                    <div class="col-6 item-imge">
+                    <div class="col-sm-6 col-md-6 col-xl-6 item-imge">
                      <img    src="https://egrad.wpengine.com/wp-content/uploads/2022/10/image-with-counter.webp" alt="">
                     </div>
                 </div>
@@ -325,15 +372,13 @@
         <section>
             <div class="container-fluid">
                 <div class="row ">
-  
-                   <div class="col-12 ">
                     <div class="owl-carousel owl-theme text-center">
                         <div class="item col-md-12  col-xl-12 col-lg-12 h-100 d-flex justify-content-between">
                             <div class="col-sm-6 col-xl-5 col-lg-6 d-flex">
                                 <span><i class="fa-solid fa-quote-left color-red"></i></span>
                                 <img class="w-100 p-3" src="./img/img-student-2.png" alt="">
                          </div>
-                         <div class="col-sm-5 col-xl-6 col-lg-6 m-4">
+                        <div class="col-sm-5 col-xl-6 col-lg-6 m-4">
                             <div class="col-12  m-4">
                                 <h4>Tələbələrimizin sözləri</h4>
                                 <h2>
@@ -355,7 +400,7 @@
                                     
                                 </div>
                             </div>
-                         </div>
+
                         </div>
                         <div class="item col-md-12  col-xl-12 col-lg-12  d-flex">
                             <div class="col-sm-6 col-xl-6 col-lg-6 my-4 ">
@@ -542,8 +587,9 @@
         
         <!-- Owl-carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-   <!-- Firebase -->
+         <!-- Bootstrap js -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       <!-- Firebase -->
 
         <script type="module">
        // Import the functions you need from the SDKs you need
@@ -640,9 +686,10 @@
          }
          getCourse()
         </script>
-        
+
         <!-- Owl js -->
         <script src="./assets/js/owl-carousel.js"></script>
+       
 
     </body>
 </html>

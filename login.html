@@ -87,15 +87,20 @@
          const passwordInp=document.getElementById("passwordInp")
           //Button
           const loginBtn=document.getElementById('loginbtn')
-          const googleLogin=document.getElementById('googleLogin')
-          const facebookLogin=document.getElementById('faceLogin')
+         
         // Functions
         loginBtn.addEventListener('click',(e)=>{
-            if(emailInp.value.trim() =='' && passwordInp.value.trim() ==''){
+            e.preventDefault()
+            if(!(emailInp.value.includes('@') && passwordInp.value.length>=8)){
                emailInp.style.border ='1px solid red !important';
                emailInp.style.background='red';
                passwordInp.style.border='1px solid red !important';
                passwordInp.style.background='red';
+               emailInp.value=''
+               passwordInp.value=''
+            }
+            else{
+                window.location='acount.html'
             }
         })
          </script>  

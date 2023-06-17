@@ -1,0 +1,303 @@
+$homecolor:(#ec0a06bb);
+$text-color:(#000);
+$text-family:( sans-serif);
+$fon-color:( rgba(2, 134, 222, 0.904) );
+$font-size:(1rem);
+
+:root{
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    --card-border-radius:2rem;
+    --border-radius-1:.4rem;
+    --border-radius-2:.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-paddong:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow:0 2rem 3rem var(var(--color-light))
+}
+
+
+body{
+    background: linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+} 
+
+header{
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment:  fixed !important;
+    background:linear-gradient(rgba(71, 71, 71, 0.5),rgba(78, 78, 78, 0.5)), url(/img/backgroun.jpg);
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+#nav-bar{
+    width: 100%;
+    position:fixed;
+    background:linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)) $homecolor;
+    #nav-item{
+        li{
+            padding: 15px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: $font-size;
+                font-weight: 600;
+                font-family: $text-family;
+                color: $text-color;
+                &:hover{
+                    color: $fon-color;
+                    border-bottom: 1px solid $fon-color;
+                    transition: 1s;
+                }
+            }
+            :nth-child(1){
+                span{
+                    color: $fon-color;
+                }
+
+            }
+        }
+    }
+}
+.logo{
+    a{
+        text-decoration: none;
+        h2{
+            font-size: var(--card-paddong);
+            font-weight: 700;
+            span{
+                color: $fon-color;
+            }
+        }
+    }
+
+}
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+.singup{
+    border: 2px solid transparent;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: $text-family;
+    font-weight: 500;
+    background-color: $fon-color;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:$text-color;
+    }
+    &:hover{
+        color: $fon-color;
+    }
+}
+footer{
+    bottom: 0;
+    background-color: #200355;
+    .logo-foot{
+      img{
+        width: 60% !important;
+        border-radius: 20%;
+      }
+    }
+    p{
+        font-size: $font-size;
+        font-weight: 600;
+    }
+    li{
+      list-style: none;
+    }
+    a{
+      font-size: $font-size;
+      padding: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+    h2{
+      font-size: $font-size;
+      padding: 10px;
+      font-weight: 500;
+    }
+    
+    
+}
+.foot-sec{
+    border: 1px solid #fff;
+}
+.textinp{
+    #userText{
+        height: 300px;
+        display: flex;
+        font-size: $font-size;
+        font-family: $text-family;
+        padding: auto;
+        bottom: 50%;
+    }
+}
+.contact{
+    ul{
+        li{
+            list-style: none;
+            text-align: center;
+            i{
+                padding: 11px;
+                color: $fon-color;
+                font-size: $font-size;
+                &:hover{
+                    cursor: pointer;
+                    color: $homecolor;
+                    transition: 1s;
+                   }
+            }
+            p{
+                font-family: $text-family;
+                font-weight: 800;
+                font-size: 15px;
+                &:hover{
+                    cursor: pointer;
+                    color: $homecolor;
+                    transition: 1s;
+                   }
+            }
+            span{
+                font-size: $font-size;
+                font-weight: 600;
+                font-family: $text-family;
+                a{
+                    font-size: $font-size;
+                   font-weight: 500;
+                   font-family: $text-family;
+                   &:hover{
+                    cursor: pointer;
+                    color: $homecolor;
+                    transition: 1s;
+                   }
+                }
+            }
+        }
+    }
+}
+.item1{
+    border-radius: 20px ;
+    h4{
+        font-size: $font-size;
+        font-family: $text-family;
+        font-weight: 600;
+        color: $fon-color;
+        padding: 10px;
+    }
+    h2{
+        font-family: $text-family;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    p{
+        font-family: $text-family;
+        font-size: $font-size;
+        font-weight: 400;
+        padding: 10px;
+    }
+}
+.item-contact{
+    border-radius: 25px;
+}
+.text{
+    font-family: $text-family;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    color: $fon-color;
+    h2{
+        font-weight: 700;
+       font-size: 4.5rem; 
+    }
+}
+.social{
+    h2{
+        font-size: $font-size;
+        font-family: $text-family;
+        font-weight: 700;
+    }
+    .icon{
+        a{
+            font-size: 1.5rem;
+            padding: 10px;
+            color: $fon-color;
+            &:hover{
+                cursor: pointer;
+                color: $homecolor;
+                transition: 1s;
+            }
+        }
+    }
+}
+
+// Media
+@media  (max-width:400px) {
+  body{
+     padding: 0 !important;
+     margin: 0 !important;
+      font-size: 10px !important;
+  }
+  header{
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment:  fixed !important;
+    background:linear-gradient(rgba(71, 71, 71, 0.5),rgba(78, 78, 78, 0.5)), url(/img/backgroun.jpg);
+    width: 100% !important;
+    height: 50vh;
+  }
+  .text{
+    font-size: 10px !important;
+  }
+  #nav-bar{
+    width: 100% !important;
+  }
+    
+}
+@media(min-width:400px) ,(max-width:800px){
+    body{
+        padding: 10 !important;
+        margin: 0 !important;
+         font-size: 10px !important;
+     }
+     header{
+       background-size: cover !important;
+       background-position: center !important;
+       background-attachment:  fixed !important;
+       background:linear-gradient(rgba(71, 71, 71, 0.5),rgba(78, 78, 78, 0.5)), url(/img/backgroun.jpg);
+       width: 100%;
+       height: 100vh;
+     }
+     .text{
+       font-size: 10px !important;
+     }
+     #nav-bar{
+        font-size: 10px !important;
+       width: 100% !important;
+       #nav-item{
+        font-size: 10px !important;
+       }
+     }
+}
