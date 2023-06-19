@@ -85,6 +85,7 @@ a {
   background-color: rgba(2, 134, 222, 0.904);
 }
 .singup a {
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;

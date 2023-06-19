@@ -225,9 +225,10 @@ a{
 
 }
 .head-img{
+    position: static;
     .img{
         img{
-            position: static;
+           
             border:1px solid transparent;
             border-radius:20px;
             background:linear-gradient(transparent,transparent) ;

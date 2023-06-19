@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haqqımızda</title>
 
+     <!-- Style CSS -->
+     <link rel="stylesheet" href="./assets/scss/css/style.css">
+     <!-- Demo CSS (No need to include it into your project) -->
+     <link rel="stylesheet" href="./assets/scss/css/demo.css">
      <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
      <!-- bootstrap 5 -->
@@ -14,6 +18,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
+      <!-- ToAS  css-->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
      <!--  Sass css-->
      <link rel="stylesheet" href="./assets/scss/about.css">
      <link rel="stylesheet" href="./assets/scss/about.css.map">
@@ -56,32 +62,11 @@
                     </div>
                     <div class="icons d-flex col-xl-3 col-lg-3 col-sm-3  m-3">
                         <div  class="col-xl-2 col-lg-3 col-sm-3 ">
-                              
                             <!-- Button trigger modal -->
-                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                               <i class="fa-solid fa-magnifying-glass"></i>
-                             </button>
-                             
-                             <!-- Modal -->
-                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                               <div class="modal-dialog">
-                                 <div class="modal-content">
-                                   <div class="modal-header">
-                                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                   </div>
-                                   <div class="modal-body">
-                                     <input type="text">
-                                   </div>
-                                   <div class="modal-footer">
-                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                     <button type="button" class="btn btn-primary">Save changes</button>
-                                   </div>
-                                 </div>
-                               </div>
-                             </div>
-                           </div>
-                           
+                            <button type="button" class="btn btn-primary showAlert"  data-toggle="modal" data-target="#glasModal">
+                                <span class="glass "><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </button>
+                        </div>
                           
                         <div class="singup  col-xl-8 col-lg-7 col-sm-7">
                             <a href="register.html">Qeydiyyatdan keç</a>
@@ -90,24 +75,20 @@
                 
                 </nav>
             </div>
-            <div class="row">
-                <img class="w-50" src="https://www.teachhub.com/wp-content/uploads/2020/06/How-to-Help-Older-Students-with-Reading-Comprehension.jpg" alt="">
-                <img class="w-50" src="https://www.expatrio.com/sites/default/files/styles/image_slider/public/2020-03/student%20working%20in%20Germany.jpg?itok=N-JDJBCq" alt="">
-            </div>
         </div>
     </header>
     <main>
         <section>
             <div class="container-fluid ">
                 <div class="row  justify-content-between bg-light">
-                    <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="col-xl-6 col-md-6 col-sm-12  py-5">
                         <h4>Canlı öyrənin</h4>
                         <h2>Birbaşa onlayn sessiyalar</h2>
                         <p>At in tellus integer feugiat scelerisque varius. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Vitae purus faucibus ornare suspendisse sed nisi lacus. In egestas erat imperdiet sed euismod. Donec pretium vulputate sapien nec sagittis gceleriste.</p>
                         <div class="sec-icon d-flex">
                             <div class="col-4 ">
                                 <div class="icon-item">
-                                    <svg width="100px" height="100px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11 14.828l1 1v3.306a.51.51 0 0 1-.807.414L5.67 15H2.376A1.376 1.376 0 0 1 1 13.624v-3.248A1.376 1.376 0 0 1 2.376 9h2.796l.935.935-.079.065H2.375a.375.375 0 0 0-.375.375v3.25a.375.375 0 0 0 .375.375h3.653L11 18.088zm12-2.839a15.867 15.867 0 0 1-2.615 8.69l1.014 1.013-.707.707L1.601 3.308l.707-.708 5.027 5.028 3.858-3.176a.51.51 0 0 1 .807.414v7.427l3.922 3.922A8.867 8.867 0 0 0 17 11.987a8.984 8.984 0 0 0-2.277-5.978l.747-.665A9.975 9.975 0 0 1 18 11.987a9.847 9.847 0 0 1-1.343 4.963l3.02 3.02A14.936 14.936 0 0 0 22 11.99a14.852 14.852 0 0 0-3.8-9.925l.73-.654A15.817 15.817 0 0 1 23 11.989zM8.047 8.34L11 11.294V5.91z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+                                    <svg width="50px" height="50px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11 14.828l1 1v3.306a.51.51 0 0 1-.807.414L5.67 15H2.376A1.376 1.376 0 0 1 1 13.624v-3.248A1.376 1.376 0 0 1 2.376 9h2.796l.935.935-.079.065H2.375a.375.375 0 0 0-.375.375v3.25a.375.375 0 0 0 .375.375h3.653L11 18.088zm12-2.839a15.867 15.867 0 0 1-2.615 8.69l1.014 1.013-.707.707L1.601 3.308l.707-.708 5.027 5.028 3.858-3.176a.51.51 0 0 1 .807.414v7.427l3.922 3.922A8.867 8.867 0 0 0 17 11.987a8.984 8.984 0 0 0-2.277-5.978l.747-.665A9.975 9.975 0 0 1 18 11.987a9.847 9.847 0 0 1-1.343 4.963l3.02 3.02A14.936 14.936 0 0 0 22 11.99a14.852 14.852 0 0 0-3.8-9.925l.73-.654A15.817 15.817 0 0 1 23 11.989zM8.047 8.34L11 11.294V5.91z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
                                 </div>
                                 <div class="icon-text">
                                     <h2>Səssiz</h2>
@@ -115,13 +96,13 @@
                             </div>
                             <div class="col-4">
                                 <div class="icon-item">
-                                    <svg width="100px" height="100px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f9f1f1" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="1.44"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 10.4656V13.5344C8 15.6412 10.2299 16.4543 11.6609 15.7205L14.6534 14.1861C16.4489 13.2655 16.4488 10.7345 14.6534 9.81391L11.6609 8.27949C10.2299 7.54573 8 8.3588 8 10.4656ZM10 13.5344C10 13.8889 10.4126 14.113 10.7484 13.9408L13.7409 12.4064C14.0864 12.2293 14.0864 11.7707 13.7409 11.5936L10.7484 10.0592C10.4126 9.88702 10 10.1111 10 10.4656V13.5344Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM4 7C4 5.34315 5.34315 4 7 4H17C18.6569 4 20 5.34315 20 7V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7Z" fill="#000000"></path> </g></svg>
+                                    <svg width="50px" height="50px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f9f1f1" transform="matrix(1, 0, 0, 1, 0, 0)" stroke-width="1.44"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 10.4656V13.5344C8 15.6412 10.2299 16.4543 11.6609 15.7205L14.6534 14.1861C16.4489 13.2655 16.4488 10.7345 14.6534 9.81391L11.6609 8.27949C10.2299 7.54573 8 8.3588 8 10.4656ZM10 13.5344C10 13.8889 10.4126 14.113 10.7484 13.9408L13.7409 12.4064C14.0864 12.2293 14.0864 11.7707 13.7409 11.5936L10.7484 10.0592C10.4126 9.88702 10 10.1111 10 10.4656V13.5344Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM4 7C4 5.34315 5.34315 4 7 4H17C18.6569 4 20 5.34315 20 7V17C20 18.6569 18.6569 20 17 20H7C5.34315 20 4 18.6569 4 17V7Z" fill="#000000"></path> </g></svg>
                                 </div>
                                 <div class="icon-text"><h2>Video yükləmə</h2></div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 ">
                                 <div class="icon-item">
-                                    <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#171717"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 21L17 21" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.5 7L13.5 11M13.5 13L13.5 11M13.5 11L14.8706 9.43363M17 7L14.8706 9.43363M14.8706 9.43363L17 13" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.5 7L6.5 11.5L10 11.5L10 13" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 16.4V3.6C2 3.26863 2.26863 3 2.6 3H21.4C21.7314 3 22 3.26863 22 3.6V16.4C22 16.7314 21.7314 17 21.4 17H2.6C2.26863 17 2 16.7314 2 16.4Z" stroke="#000000" stroke-width="0.4800000000000001"></path> </g></svg>
+                                    <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#171717"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 21L17 21" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.5 7L13.5 11M13.5 13L13.5 11M13.5 11L14.8706 9.43363M17 7L14.8706 9.43363M14.8706 9.43363L17 13" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9.5 7L6.5 11.5L10 11.5L10 13" stroke="#000000" stroke-width="0.4800000000000001" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 16.4V3.6C2 3.26863 2.26863 3 2.6 3H21.4C21.7314 3 22 3.26863 22 3.6V16.4C22 16.7314 21.7314 17 21.4 17H2.6C2.26863 17 2 16.7314 2 16.4Z" stroke="#000000" stroke-width="0.4800000000000001"></path> </g></svg>
                                 </div>
                                 <div class="icon-text"><h2>Keyfiyyətə nəzarət</h2></div>
                             </div>
@@ -139,7 +120,7 @@
         </section>
         <section>
             <div class="container-fluid">
-                <div class="row bg-danger sec-item">
+                <div class="row  sec-item">
                    <div class="col-6 item1">
                     <h4>Dünya sinfi</h4>
                     <h2>Aydın tədris materialları</h2>
@@ -148,48 +129,44 @@
                    <div class="col-6 item2">
                     <div class="col d-flex">
                         <div class="col-4  ">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-1.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-1.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/05.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/05.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-3a.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-3a.svg" alt="">
                          </div>
                     </div>
                     <div class="col d-flex ">
                         <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-6.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-6.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-2a.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-2a.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-4a.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-4a.svg" alt="">
                          </div>
                     </div>
                     <div class="col d-flex">
                         <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-7.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-7.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-9a.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-9a.svg" alt="">
                          </div>
                          <div class="col-4">
-                            <img class="w-50" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-10.svg" alt="">
+                            <img class="w-75" src="https://egrad.wpengine.com/wp-content/uploads/2023/01/brand-logo-10.svg" alt="">
                          </div>
                     </div>
-                    
-                    
-                     
-                    
-                   </div>
+                
                 </div>
             </div>
         </section>
         <section>
             <div class="container-fluid">
-                <div class="row bg-light justify-content-between">
+                <div class="row bg-light justify-content-between p-5">
                     <div class="col-sm-6 col-md-6 col-xl-6 sec-post">
                         <h4>Niyə bizim</h4>
                         <h2>Ən yaxşı nailiyyətlərimiz</h2>
@@ -218,6 +195,30 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="modal fade" id="glasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        İstədiyiniz məhsulu axtara bilərsiniz
+                      </h5>
+                      <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body d-flex bg-light m-2">
+                        <div class="col-10 m-2">
+                            <input type="text" class="form-control form-control-user w-100">
+                        </div>
+                        <div class="col-2 m-2">
+                            <button type="button" class="btn btn-success"><i class="fa-solid fa-magnifying-glass p-2"></i>Axtarın</button>
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
     </main>
     <footer>
         <div class="container-fluid text-white">
@@ -228,9 +229,9 @@
             </div>
                <div class="col-sm-3 col-xl-3 col-lg-3">
                    <div class="logo-foot my-4">
-                    <a class="d-flex" href="home.html">
+                    <a class="d-flex " href="home.html">
                         <svg width="50px" height="50px" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a{fill:none;stroke:#0c91e9e8;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M6.7467,18.7878v4.4681c8.0151-3.8259,16.9146-7.41,25.2164-7.9631l2.6543,3.9816c-6.0739,2.7818-10.7292,8.22-13.5327,11.2222,9.27-2.9613,16.8806-3.6837,20.1686-4.5863V18.6941L23.9048,5.5Z"></path><path class="a" d="M6.7467,27.2374V42.5H41.2533V31.219a111.9752,111.9752,0,0,0-26.7575,5.9792l-2.474-3.7812C17.54,27.6756,21.2133,24.68,24.5935,21.5217A94.3183,94.3183,0,0,0,6.7467,27.2374Z"></path></g></svg>
-                        <h2>Learn<span>Teach</span></h2>
+                        <h1>Learn<span>Teach</span></h1>
                     </a>
                   </div>
                    <div class="platforms d-flex mt-5 foot-item">
@@ -321,11 +322,14 @@
        </footer>
 
     <!-- js tags -->
-    <!--javascript tags  -->
-
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+     
+    <!-- Toastr -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
    <!-- Bootstrap js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
      <!-- Firebase -->
@@ -353,8 +357,16 @@
 
        import{ getDatabase, ref, set ,  get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
        const db=getDatabase()
-            //  Email foot add
-
+                  // id cretae
+      
+      function generate_uuidv4(){
+         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
+      function(c) {
+        var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
+         return uuid.toString(16);
+       });
+     }
+     const id=generate_uuidv4()
             // Inputs
     const userEmail=document.getElementById('formİnp')
   
@@ -373,11 +385,11 @@
              userEmail.style.border ='1px solid red !important';
              userEmail.style.background='red';
              userEmail.value=''
-             alert('düzgün email və parol daxil edin')
-          }
-          else{
-              window.location='login.html'
-          }
+            
+            }
+           else if(userEmail.value.includes('@') ){
+              window.location='acount.html'
+           }
 
           
       })

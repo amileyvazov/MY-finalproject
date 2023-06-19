@@ -47,6 +47,7 @@ header{
 }
 
 #nav-bar{
+  z-index: 99;
   align-items: center;
     width: 100%;
     position:fixed;
@@ -123,10 +124,11 @@ a{
   }
 }
 .singup{
+  padding-top: 5px;
     border: 2px solid transparent;
     border-radius: 35px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: $text-family;
     font-weight: 500;
     background-color: $fon-color;

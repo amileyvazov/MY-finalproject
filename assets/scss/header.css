@@ -209,8 +209,10 @@ a {
   font-family: sans-serif;
 }
 
-.head-img .img img {
+.head-img {
   position: static;
+}
+.head-img .img img {
   border: 1px solid transparent;
   border-radius: 20px;
   background: linear-gradient(transparent, transparent);

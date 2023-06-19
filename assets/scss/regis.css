@@ -5,7 +5,7 @@ body {
 .card {
   background-position: center;
   background-size: cover !important;
-  filter: blur(12, 22, 2, 2);
+  filter: blur(2px);
   background: linear-gradient(rgba(174, 175, 174, 0.37), rgba(196, 193, 193, 0.363)), url(https://img.freepik.com/premium-vector/welcome-back-school-background_3589-817.jpg?w=2000);
 }
 

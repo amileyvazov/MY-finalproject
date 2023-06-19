@@ -1,0 +1,146 @@
+$homecolor:(#ec0a06bb);
+$text-color:(#000);
+$text-family:( sans-serif);
+$fon-color:( rgba(2, 134, 222, 0.904) );
+$font-size:(1rem);
+
+:root{
+    --color-primary:#7380ec;
+    --color-danger:#ff7782;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132,139,200,.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+
+    --card-border-radius:2rem;
+    --border-radius-1:.4rem;
+    --border-radius-2:.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-paddong:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow:0 2rem 3rem var(var(--color-light))
+}
+.icon-text{
+    padding: 10px 0;
+    h2{
+
+        font-size: 1rem;
+        font-family: $text-family;
+        font-weight: 500px;
+        align-items:center ;
+    }
+}
+.video{
+    iframe{
+        width: 100%;
+        height: 427px;
+        margin: 4px;
+    }
+}
+.sec-item{
+    background: linear-gradient(rgba(240, 235, 235, 0.438),rgba(223, 226, 226, 0.233)) $homecolor;
+    height: 70vh;
+    
+    .item1{
+        position: static;
+        background-position: center !important;
+        backdrop-filter: blur(2px) !important;
+        background-size: cover !important;
+        background: linear-gradient(rgba(233, 4, 35, 0.5), rgba(105, 103, 103, 0.733)), url(https://clueylearning.com.au/wp-content/uploads/2019/08/most-effective-way-to-study-according-to-science.jpg);
+        font-weight: 600;
+        font-family: $text-family;
+        color: #fff;
+        h4{
+           font-size: $font-size;
+            padding: 10px 0;
+            padding: 10px;
+        }
+        h2{
+            padding: 10px;
+         font-size: 1.5rem;
+         padding: 10px 0 ;
+        }
+        p{
+            padding: 10px;
+            font-size: $font-size;
+            padding: 10px 0;
+        }
+ 
+    }
+    .item2{
+        img{
+            align-items: center;
+            box-shadow: 12px,2px,2px 2px;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            padding: 13px;
+            margin: 15px;
+            background: linear-gradient(rgba(233, 223, 223, 0.267),rgba(233, 222, 234, 0.692)), $homecolor;
+        }
+    }
+}
+.sec-post{
+    font-family: $text-family;
+    font-weight: 600;
+    h4{
+        font-size: $font-size;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: $font-size;
+    }
+    svg{
+
+        margin: 0 10px;
+        padding: 2px;
+        border-right: 1px solid #000;
+    }
+    h3{
+        margin-top: 10px;
+        font-size: .8rem;
+        font-weight: 600;
+    }
+}
+
+.item-imge{
+   img{
+        width: 300px;
+        height: 300px;
+        margin: 10px 80px;
+        border-radius: 25px;
+        &:hover{
+            margin: 10px;
+            transform: translate3d(200px 30px) rotate(45deg ,15deg);
+           cursor: pointer;
+           transition: 10s ease;
+        
+          }
+    }
+}
+.modal-title{
+    margin: 10px;
+    h5{
+        font-family: $text-family;
+        font-weight: 500;
+    }
+}
+.modal-content{
+    background: linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+}
+.modal-footer{
+    button{
+        text-align: end;
+        align-items: end;
+        
+    }
+}

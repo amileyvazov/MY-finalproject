@@ -92,18 +92,7 @@ a{ align-items: center;
     text-decoration: none;
     color: $text-color;
 }
-.glass{
-    i{
-        align-items: center;
-        font-size: 1rem;
-        padding: 7px 0;
-        &:hover{
-            color: $homecolor;
-            transition: 1s ease;
-            cursor: pointer;
-        }
-    }
-}
+
 .shop{
     align-items: center;
     font-size: 1rem;
@@ -151,6 +140,49 @@ a{ align-items: center;
     &:hover{
         color: $fon-color;
     }
+}
+#dataRow{
+
+ .userprofil{
+    .username{
+        border-radius: 25px;
+        background: linear-gradient(rgba(255, 252, 252, 0.651),rgba(255, 255, 255, 0.473)), url(https://media.istockphoto.com/id/1218737747/vector/learning-online-e-learning-video-call-chat-with-class-distance-education.jpg?s=612x612&w=0&k=20&c=fFFwc3CTP4XtvmruZLiK8EzAbzvAxJL_kw5BsA7z7w8=);
+    }
+    
+    font-family: $text-family;
+    margin: 150px ;
+    display: flex;
+    h2{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.9rem;
+    font-weight: 600;
+        color: $fon-color;
+        padding: 0 10px;
+        margin-left: 10px;
+    }
+   p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $text-family;
+    color: $fon-color;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 27px;
+    
+   }
+   i{
+    background-color: $fon-color;
+    font-size: 3.9rem;
+    padding: 15px;
+    border: 1px solid $homecolor;
+    border-radius: 25px;
+    background-color: #fff;
+   }
+ }
+ 
 }
 footer{
     background-color: #200355;
