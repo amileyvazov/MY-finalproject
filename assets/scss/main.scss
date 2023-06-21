@@ -412,11 +412,15 @@ footer{
      text-align: center;
      align-items: center;
      flex-wrap: nowrap;
+     svg{
+      width: 100px;
+      height: 50px;
+     }
     h3{
       font-size: 1.1rem;
       font-family: $text-family;
       font-weight: 500;
-      margin:10px 0;
+      margin:10px;
     }
   }
 }

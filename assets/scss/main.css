@@ -352,11 +352,15 @@ footer p {
   align-items: center;
   flex-wrap: nowrap;
 }
+.sec-post .item-text1 svg {
+  width: 100px;
+  height: 50px;
+}
 .sec-post .item-text1 h3 {
   font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 500;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .item-imge img {
