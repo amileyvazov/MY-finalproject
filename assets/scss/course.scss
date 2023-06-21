@@ -186,3 +186,99 @@ footer{
        font-size: 2.5rem; 
     }
 }
+.card{
+    border-radius: 15px;
+    margin:  5% 0;
+    position: static;
+   &:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    background-color: $homecolor;
+   font-size: 1rem;
+   }
+    .card-img{
+      img{
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+   
+  }
+  .card-body{
+    h2{
+      font-size: $font-size;
+      font-family: $text-family;
+      font-weight: 500;
+      padding: 10px 0;
+    }
+    p{
+      font-size:1rem;
+      font-weight: 600;
+      font-family: $text-family;
+      padding: 10px 0;
+    }
+  }  
+  .card-foot{
+    .card-price{
+      padding:10px 0;
+      a{
+         text-decoration: none;
+        font-size: 1.9rem;
+        font-family: $text-family;
+        font-weight: 500;
+        padding: 15px;
+        color: #000;
+      }
+      span{
+        i{
+          color: rgb(218, 233, 2);
+        }
+          
+      }
+    }
+  
+  }
+  .card-btn{
+    button{
+      background-color: $fon-color;
+        border-radius: 25px;
+       font-size: .8rem;
+       font-weight: 500;
+       padding: 10ppx;
+       border: 1px solid transparent;
+       &:hover{
+         cursor: pointer;
+         transition: 1s ease;
+         color: #fff;
+        
+       }
+     }
+  }
+  .card-foot{
+  
+      .card-price{
+        a{
+          color: #fff;
+        }
+      }
+  }
+@media(max-width:740px){
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .nav-item{
+    li{
+
+      a{
+        font-size: 1px;
+      }
+    }
+  }
+  .singup{
+    a{
+      font-size: 10px;
+    }
+  }
+}

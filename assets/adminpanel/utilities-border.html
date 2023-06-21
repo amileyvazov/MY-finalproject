@@ -421,17 +421,17 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
             <!-- End of Footer -->
-
+            
         </div>
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Copyright &copy; Your Website 2021</span>
+                </div>
+            </div>
+        </footer>
         <!-- End of Content Wrapper -->
 
     </div>
@@ -488,16 +488,6 @@
   
 
      const db=getDatabase()
-     // Book section input
-     const bookAvatar=document.getElementById('book-avatar')
-     const bookName=document.getElementById('book-name')
-     const bookText=document.getElementById('book-text')
-     const bookPrice=document.getElementById('book-price')
-
-     // Book section btn
-     const bookCreate=document.getElementById("book-add")
-     const bookEdit=document.getElementById('bookedit')
-     const bookDelete=document.getElementById('bookdelete')
      // id cretae
       
       function generate_uuidv4(){
@@ -509,66 +499,7 @@
      }
      const id= generate_uuidv4()
 
-     // Functions 
-      function instalBook(){
-        set(ref(db, 'books/' + id),{
-         Name:bookName.value,
-         Text:bookText.value,
-         Image:bookAvatar.value,
-         Price:bookPrice.value
-        })
-        .then(alert('kitab əlavə olundu'))
-        .catch(err=>console.log(err))
 
-      }
-      function editBook(){
-       update(ref(db, "book/" + bookName.value),{
-         Text:bookText.value,
-         Image:bookAvatar.value,
-         Price:bookPrice.value
-       })
-       .then(alert('dəyişiklik qeydə alındı'))
-       .catch(err=>console.log(err))
-      }
-      function deleteBook(){
-         remove(ref(db,"book/"))
-         .then(alert("kitab silindi"))
-         .catch(err=>console.log(err))
-      }
-     
-         const dataaRow=document.querySelector('.book-body')
-       function bookItem(){
-        get(ref(db,'books/'))
-        .then(data=>{
-            let datas=data.val()
-            for (const key in datas) {
-                    const el = datas[key];
-                    dataaRow.innerHTML +=` 
-                    <div class="col-xl-4 col-sm-12 col-lg-4 book-item">
-                       <div class="book-img"><img class="w-100" src="${el.Image}" alt=""></div>
-                        <div class="book-text">
-                         <h2 class="fs-6">${el.Name}</h2>
-                         <p class="fs-6">${el.Text}</p>
-                         <span class="fs-3"> ${el.Price} <s>$15</s></span>
-                        </div>
-                        <div class="btn-book d-flex justify-content-between">
-                            <button id="bookdetails" class="btn-warning w-100">Detallar</button>
-                            <button id="bookedit" class="btn-primary w-100">Yenilə</button>
-                            <button id="bookdelete" class="btn-danger w-100" type="button" class="btn btn-danger "><i class="fa-solid fa-xmark"></i></button>
-                        </div>
-                    </div>
-                   `
-            }
-           
-        })
-        .catch(err=> console.log(err))
-       }
-       bookItem()
-
-     // Btns addEvenlistener 
-     bookCreate.addEventListener('click', instalBook)
-     bookEdit.addEventListener('click', editBook)
-     bookDelete.addEventListener('click', deleteBook)
 
 
       // Course section input

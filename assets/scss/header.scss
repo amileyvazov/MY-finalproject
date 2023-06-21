@@ -2,10 +2,10 @@ $homecolor:(#ec0a06bb);
 $text-color:(#000);
 $text-family:( sans-serif);
 $fon-color:( rgba(2, 134, 222, 0.904) );
-$font-size:(1rem);
+$font-size:(1.1rem);
 
 :root{
-    --color-primary:#7380ec;
+    --color-primary:#050608;
     --color-danger:#ff7782;
     --color-success:#41f1b6;
     --color-warning:#ffbb55;
@@ -55,23 +55,24 @@ h5{
 
 
 header{
-    
+    padding: 0;
+    margin: 0;
     background-position: center !important;
     background-size: cover !important;
-    filter: blur(12, 22, 2, 2);
     background: linear-gradient(rgba(174, 175, 174, 0.37), rgba(196, 193, 193, 0.363)), url(https://img.freepik.com/premium-vector/welcome-back-school-background_3589-817.jpg?w=2000);
     height: 100vh;
     background-attachment: fixed;
 }
 
 #nav-bar{
+    padding: 0;
+    margin: 0;
     align-items: center;
-    width: 100%;
     position:fixed;
     background:linear-gradient(rgba(255, 252, 252, 0.452),rgba(255, 255, 255, 0.356)) $homecolor;
     #nav-item{
         li{
-            padding: 15px;
+            padding:0 15px ;
             list-style: none;
             a{
                 text-decoration: none;
@@ -120,9 +121,10 @@ a{
     border-radius: 35px;
     font-size: 1rem;
     font-family: $text-family;
-    font-weight: 500;
+    font-weight: 600;
     background-color: $fon-color;
     a{
+        text-align: center;
         display: flex;
         text-align: center;
         padding: 10px 0;
@@ -137,7 +139,7 @@ a{
 }
 
 .head-section{
-    margin: 10% ;
+    margin: 10% 2% ;
     .head-text{
         color: $text-color;
         h5{
@@ -160,7 +162,8 @@ a{
         }
         .inp{
             input{
-                width: 70%;
+                border-radius: 25px;
+                width: 100%;
                 padding:  20px;
                 margin:  10px;
                 text-align: left;
@@ -169,16 +172,14 @@ a{
                 font-weight: 600;
             }
             button{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                
                 border: 1px solid $fon-color;
                 background-color: $fon-color;
                 padding: 10px;
-                border-radius: 15px;
-                position: absolute;
+                border-radius: 25px;
+                position: relative;
                 z-index: 3;
-                transform: translate(335px,20px);
+               
                 color: $text-color;
                 font-size: $font-size;
                 font-weight: 500;
@@ -196,10 +197,10 @@ a{
 }
 
 .hed1-sec{
-    padding: 10px ;
+    padding: 0 10px ;
     a{
         color: $text-color;
-        font-size:$font-size;
+        font-size:1px;
         padding: 0 10px;
         font-weight: 600;
         align-items: center;
@@ -248,3 +249,66 @@ a{
 
 
 
+@media (max-width:400px) {
+   body{
+       font-size: 5px;
+       padding: 0;
+       .header{
+        width: 100%;
+        height: 100% !important;
+      #nav-bar{
+        width: 100%;
+        #nav-item{
+            font-size: 1px !important;
+            padding: 0;
+            margin: 0;
+        }
+      }
+    }
+    .inp{
+        button{
+            transform: translate(1px,1px);
+        }
+    }
+}
+}
+.nav-bar{
+    font-size: 5px;
+}
+.video{
+
+    iframe{
+      width: 300px;
+    }
+}
+@media (max-width:700px) {
+    body{
+        font-size: 5px;
+        padding: 0;
+        .header{
+         height: 100% !important;
+       #nav-bar{
+         width: 100%;
+         #nav-item{
+             font-size: 1px !important;
+             padding: 0;
+             margin: 0;
+         }
+       }
+     }
+ }
+ }
+ .inp{
+    button{
+        transform: translate(10px,1px);
+    }
+}
+ .nav-bar{
+     font-size: 1px;
+ }
+ .video{
+ 
+     iframe{
+       width: 300px ;
+     }
+ }

@@ -86,7 +86,6 @@
          const passwordInp=document.getElementById("passwordInp")
           //Button
           const loginBtn=document.getElementById('loginbtn')
-         
         // Functions
         loginBtn.addEventListener('click',(e)=>{
             e.preventDefault()
@@ -97,6 +96,10 @@
                passwordInp.style.background='red';
                emailInp.value=''
                passwordInp.value=''
+             
+            }
+            else if(izadmin==true){
+                window.location='index.html'
             }
             else{
                 window.location='acount.html'

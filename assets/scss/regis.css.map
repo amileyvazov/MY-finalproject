@@ -1,1 +1,1 @@
-{"version":3,"sources":["regis.scss","regis.css"],"names":[],"mappings":"AAMA;EACI,uRAAA;ACLJ;;ADSA;EACI,2BAAA;EACG,iCAAA;EACA,iBAAA;EACA,kLAAA;ACNP;;ADSG;EACI,+BAhBI;ACUX;;ADQG;EACC,qBAAA;EACA,iBAnBO;EAoBP,uBAtBS;EAuBT,+BAtBO;ACiBX","file":"regis.css"}
+{"version":3,"sources":["regis.scss","regis.css"],"names":[],"mappings":"AAMA;EACI,uRAAA;ACLJ;;ADSA;EACI,2BAAA;EACG,iCAAA;EAEA,kLAAA;ACPP;;ADUG;EACI,+BAhBI;ACSX;;ADSG;EACC,qBAAA;EACA,iBAnBO;EAoBP,uBAtBS;EAuBT,+BAtBO;ACgBX","file":"regis.css"}

@@ -252,7 +252,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   width: 639px;
+   width: 100% !important;
    height: 427px;
    margin: 4px;
    z-index: 1;
@@ -365,8 +365,8 @@ body{
 .glass{
   i{
       align-items: center;
-      font-size: 1rem;
-      padding: 7px 0;
+      font-size: .9rem;
+      padding: 5px 0;
       &:hover{
           color: $homecolor;
           transition: 1s ease;
@@ -499,4 +499,14 @@ footer{
    
   }
 }
-
+@media (max-width:878px) {
+  body{
+    font-size: 1px !important;
+  }
+  .item-image{
+      img{
+        width: 10px;
+        padding: 0;
+      }
+  }
+}

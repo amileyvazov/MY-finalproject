@@ -1,12 +1,10 @@
 
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
+const show = document.getElementById('showbsmodal')
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
 var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function (event) {
+exampleModal.addEventListener('click',function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget
   // Extract info from data-bs-* attributes
@@ -20,10 +18,10 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 
 })
 $(document).ready(function() {  
-  $('#cartModal').modal('show');
+  $('#openModalButton').mymodal('show');
 });
 $(document).ready(function() {  
-  $('#glasModal').modal('show');
+  $('#glasModal').glasmodal('show');
 });
 // ************************************************
 // Shopping Cart API
@@ -44,14 +42,14 @@ var shoppingCart = (function() {
   
   // Save cart
   function saveCart() {
-    sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+    localStorage.setItem('shoppingCart', JSON.stringify(cart));
   }
   
     // Load cart
   function loadCart() {
-    cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+    cart = JSON.parse(localStorage.getItem('shoppingCart'));
   }
-  if (sessionStorage.getItem("shoppingCart") != null) {
+  if (localStorage.getItem("shoppingCart") != null) {
     loadCart();
   }
   
@@ -59,21 +57,24 @@ var shoppingCart = (function() {
   // =============================
   // Public methods and propeties
   // =============================
-  var obj = {};
   
   // Add to cart
-  obj.addItemToCart = function(name, price, count) {
-    for(var item in cart) {
-      if(cart[item].name === name) {
-        cart[item].count ++;
-        saveCart();
-        return;
+  const obj = {};
+  $('#coursBtn'),on('click, addCard',()=>{
+    console.log('salam');
+    obj.addItemToCart = function(name, price, count) {
+      for(var item in cart) {
+        if(cart[item].name === name) {
+          cart[item].count ++;
+          saveCart();
+          return;
+        }
       }
+      var item = new Item(name, price, count);
+      cart.push(item);
+      saveCart();
     }
-    var item = new Item(name, price, count);
-    cart.push(item);
-    saveCart();
-  }
+  })
   // Set count from item
   obj.setCountForItem = function(name, count) {
     for(var i in cart) {
@@ -167,7 +168,7 @@ var shoppingCart = (function() {
 // Triggers / Events
 // ***************************************** 
 // Add item
-$('.add-to-cart').click(function(event) {
+$('#add-to-cart').click(function(event) {
   event.preventDefault();
   var name = $(this).data('name');
   var price = Number($(this).data('price'));
@@ -187,8 +188,8 @@ function displayCart() {
   var output = "";
   for(var i in cartArray) {
     output += "<tr>"
-      + "<td>" + cartArray[i].name + "</td>" 
-      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td>" + el.Name + "</td>" 
+      + "<td>(" + el.Price + ")</td>"
       + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
       + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
       + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"

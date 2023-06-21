@@ -163,4 +163,80 @@ footer h2 {
 .text h2 {
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.card {
+  border-radius: 15px;
+  margin: 5% 0;
+  position: static;
+}
+.card:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+  background-color: rgba(236, 10, 6, 0.7333333333);
+  font-size: 1rem;
+}
+.card .card-img img {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.card-body h2 {
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.card-body p {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 10px 0;
+}
+
+.card-foot .card-price {
+  padding: 10px 0;
+}
+.card-foot .card-price a {
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  color: #000;
+}
+.card-foot .card-price span i {
+  color: rgb(218, 233, 2);
+}
+
+.card-btn button {
+  background-color: rgba(2, 134, 222, 0.904);
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 10ppx;
+  border: 1px solid transparent;
+}
+.card-btn button:hover {
+  cursor: pointer;
+  transition: 1s ease;
+  color: #fff;
+}
+
+.card-foot .card-price a {
+  color: #fff;
+}
+
+@media (max-width: 740px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-item li a {
+    font-size: 1px;
+  }
+  .singup a {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=course.css.map */

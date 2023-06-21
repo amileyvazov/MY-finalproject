@@ -507,7 +507,10 @@
                                     <div class="chart-pie pt-4 pb-2">
                                         <canvas id="myPieChart"></canvas>
                                     </div>
-                                   
+                                    <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
+                                   <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+
+                                 
                                 </div>
                             </div>
                         </div>
@@ -611,7 +614,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>LEARNTEACH &copy; Your Website 2023</span>
                     </div>
                 </div>
             </footer>
@@ -634,224 +637,22 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="exampleModalLabel">Admin sistemdən çıxmaq istəyirsən?</h5>
+                    <button class="close btn-danger" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-dander" type="button" data-dismiss="modal">Ləğv etmək</button>
+                    <a class="btn btn-primary" href="/login.html">Çıxış</a>
                 </div>
             </div>
         </div>
     </div>
  <!-- javascript tags -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script type="module">
-     // Import the functions you need from the SDKs you need
-     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-     // TODO: Add SDKs for Firebase products that you want to use
-     // https://firebase.google.com/docs/web/setup#available-libraries
-   
-     // Your web app's Firebase configuration
-     const firebaseConfig = {
-       apiKey: "AIzaSyC2pFMNIxh4wEXSRYZSI71VNQRiIAylPsI",
-       authDomain: "myproject-161de.firebaseapp.com",
-       databaseURL: "https://myproject-161de-default-rtdb.firebaseio.com",
-       projectId: "myproject-161de",
-       storageBucket: "myproject-161de.appspot.com",
-       messagingSenderId: "139905651745",
-       appId: "1:139905651745:web:7ea3788ada21e9d8993f60"
-     };
-   
-     // Initialize Firebase
-     const app = initializeApp(firebaseConfig);
 
-
-     import{ getDatabase, ref, set , update, remove, get, child  } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"
-  
-
-     const db=getDatabase()
-     // Book section input
-     const bookAvatar=document.getElementById('book-avatar')
-     const bookName=document.getElementById('book-name')
-     const bookText=document.getElementById('book-text')
-     const bookPrice=document.getElementById('book-price')
-
-     // Book section btn
-     const bookCreate=document.getElementById("book-add")
-     const bookEdit=document.getElementById('bookedit')
-     const bookDelete=document.getElementById('bookdelete')
-     // id cretae
-      
-      function generate_uuidv4(){
-         return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
-      function(c) {
-        var uuid = Math.random() * 16 | 0, v = c == 'x' ? uuid : (uuid & 0x3 | 0x8);
-         return uuid.toString(16);
-       });
-     }
-     const id= generate_uuidv4()
-
-     // Functions 
-      function instalBook(){
-        set(ref(db, 'books/' + id),{
-         Name:bookName.value,
-         Text:bookText.value,
-         Image:bookAvatar.value,
-         Price:bookPrice.value
-        })
-        .then(alert('kitab əlavə olundu'))
-        .catch(err=>console.log(err))
-
-      }
-      function editBook(){
-       update(ref(db, "book/" + bookName.value),{
-         Text:bookText.value,
-         Image:bookAvatar.value,
-         Price:bookPrice.value
-       })
-       .then(alert('dəyişiklik qeydə alındı'))
-       .catch(err=>console.log(err))
-      }
-      function deleteBook(){
-         remove(ref(db,"book/"))
-         .then(alert("kitab silindi"))
-         .catch(err=>console.log(err))
-      }
-      function getCourse(){
-           get(ref(db,'course/'))
-           .then(data=>{
-               const rowCard=document.querySelector('.table')
-               let datas=data.val()
-               for (const key in datas) {
-                       const ele = datas[key];
-                          rowCard.innerHTML +=`
-                          <thead>
-                                          <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Kursun şəkilləri</th>
-                                            <th scope="col">Kursun adları</th>
-                                            <th scope="col">Kursun məzmunu</th>
-                                            <th scope="col">Kursun qiyməti</th>
-                                            <th scope="col">Kursu redaktə etmək</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">1</th>
-                                            <td><img class="w-100" src="${ele.İmage}" alt=""></td>
-                                            <td>${ele.Name}</td>
-                                            <td><p class="fw-6 ">${ele.Text}</p></td>
-                                            <td>${ele.Price}</td>
-                                            <td class="d-flex">
-                                                <th><button type="button" class="btn btn-primary ">Detallar</button></th>
-                                                <th><button id="edit" class="btn-primary w-100">Yenilə</button></th>
-                                                <th> <button id="delete" class="btn-danger w-100">Sil</button></th>
-
-                                                </td>
-                                          </tr>
-                                         
-                                        </tbody>
-                          ` 
-               }
-              
-           })
-           .catch(err=> console.log(err))
-         }
-         getCourse()
-
-         const dataaRow=document.querySelector('.book-body')
-       function bookItem(){
-        get(ref(db,'books/'))
-        .then(data=>{
-            let datas=data.val()
-            for (const key in datas) {
-                    const el = datas[key];
-                    dataaRow.innerHTML +=` 
-                    <div class="w-100 book-item">
-                       <div class="book-img"><img class="w-100" src="${el.Image}" alt=""></div>
-                        <div class="book-text">
-                         <h2>${el.Name}</h2>
-                         <p>${el.Text}</p>
-                         <span class="fs-3"> ${el.Price} <s>$15</s></span>
-                        </div>
-                        <div class="btn-book d-flex justify-content-between">
-                            <button id="bookdetails" class="btn-warning w-100">Detallar</button>
-                            <button id="bookedit" class="btn-primary w-100">Yenilə</button>
-                            <button id="bookdelete" class="btn-danger w-100" type="button" class="btn btn-danger "><i class="fa-solid fa-xmark"></i></button>
-                        </div>
-                    </div>
-                   `
-            }
-           
-        })
-        .catch(err=> console.log(err))
-       }
-       bookItem()
-
-     // Btns addEvenlistener 
-     bookCreate.addEventListener('click', instalBook)
-     bookEdit.addEventListener('click', editBook)
-     bookDelete.addEventListener('click', deleteBook)
-
-
-      // Course section input
-      const courseAvatar=document.getElementById('courseAvatar')
-     const courseName=document.getElementById('courseName')
-     const courseText=document.getElementById('courseText')
-     const coursePrice=document.getElementById('coursePrice')
-     
-     // Course section btn
-     const courseCreate=document.getElementById('add')
-     const courseEdit=document.getElementById('edit')
-     const courseDelete=document.getElementById('delete')
-     // id cretae
-      
-
-     
-     // Functions 
-      function instalCourse(){
-        set(ref(db, 'course/' + id),{
-         Name:courseName.value,
-         Text:courseText.value,
-         İmage:courseAvatar.value,
-         Price:coursePrice.value
-        })
-        .then(res=>()=>{
-          if(res.ok){
-          alert('kurs əlavə  olundu')
-          }else{
-           alert('elave olunmadi')
-          }
-     
-        })
-        .catch(err=>console.log(err))
-     
-      }
-      function editCourse(){
-       update(ref(db, "course/"  ),{
-         Text:courseText.value,
-         Image:courseAvatar.value,
-         Price:coursePrice.value
-       })
-       .then(alert('dəyişiklik qeydə alındı'))
-       .catch(err=>console.log(err))
-      }
-      function deleteCourse(){
-         remove(ref(db,"course/", id))
-         .then(alert("dəyişiklik qeydə alındı"))
-         .catch(err=>console.log(err))
-      }
-
-     
-     // Btns addEvenlistener 
-     courseCreate.addEventListener('click',  instalCourse )
-     courseEdit.addEventListener('click',  editCourse)
-     courseDelete.addEventListener('click', deleteCourse)
-   </script>
     <!-- Bootstrap core JavaScript-->
     <script src="./jquery/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -863,7 +664,7 @@
     <script src="./js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="./chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="./js/demo/chart-area-demo.js"></script>

@@ -1,5 +1,5 @@
 :root {
-  --color-primary:#7380ec;
+  --color-primary:#050608;
   --color-danger:#ff7782;
   --color-success:#41f1b6;
   --color-warning:#ffbb55;
@@ -51,27 +51,29 @@ h5 {
 }
 
 header {
+  padding: 0;
+  margin: 0;
   background-position: center !important;
   background-size: cover !important;
-  filter: blur(12, 22, 2, 2);
   background: linear-gradient(rgba(174, 175, 174, 0.37), rgba(196, 193, 193, 0.363)), url(https://img.freepik.com/premium-vector/welcome-back-school-background_3589-817.jpg?w=2000);
   height: 100vh;
   background-attachment: fixed;
 }
 
 #nav-bar {
+  padding: 0;
+  margin: 0;
   align-items: center;
-  width: 100%;
   position: fixed;
   background: linear-gradient(rgba(255, 252, 252, 0.452), rgba(255, 255, 255, 0.356)) rgba(236, 10, 6, 0.7333333333);
 }
 #nav-bar #nav-item li {
-  padding: 15px;
+  padding: 0 15px;
   list-style: none;
 }
 #nav-bar #nav-item li a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   font-family: sans-serif;
   color: #000;
@@ -109,10 +111,11 @@ a {
   border-radius: 35px;
   font-size: 1rem;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   background-color: rgba(2, 134, 222, 0.904);
 }
 .singup a {
+  text-align: center;
   display: flex;
   text-align: center;
   padding: 10px 0;
@@ -126,66 +129,63 @@ a {
 }
 
 .head-section {
-  margin: 10%;
+  margin: 10% 2%;
 }
 .head-section .head-text {
   color: #000;
 }
 .head-section .head-text h5 {
   padding: 10px 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 600;
 }
 .head-section .head-text h2 {
   padding: 10px 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 600;
 }
 .head-section .head-text p {
   padding: 10px 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 600;
 }
 .head-section .head-text .inp input {
-  width: 70%;
+  border-radius: 25px;
+  width: 100%;
   padding: 20px;
   margin: 10px;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: sans-serif;
   font-weight: 600;
 }
 .head-section .head-text .inp button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border: 1px solid rgba(2, 134, 222, 0.904);
   background-color: rgba(2, 134, 222, 0.904);
   padding: 10px;
-  border-radius: 15px;
-  position: absolute;
+  border-radius: 25px;
+  position: relative;
   z-index: 3;
-  transform: translate(335px, 20px);
   color: #000;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   font-family: sans-serif;
 }
 .head-section .head-text .inp button:hover {
   color: #000;
   transition: 1s;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .hed1-sec {
-  padding: 10px;
+  padding: 0 10px;
 }
 .hed1-sec a {
   color: #000;
-  font-size: 1rem;
+  font-size: 1px;
   padding: 0 10px;
   font-weight: 600;
   align-items: center;
@@ -193,18 +193,18 @@ a {
 .hed1-sec a:hover {
   color: rgba(2, 134, 222, 0.904);
   transition: 1s;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 .hed1-sec h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   font-family: sans-serif;
 }
 .hed1-sec h4:hover {
   color: rgba(2, 134, 222, 0.904);
   transition: 1s;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   font-family: sans-serif;
 }
@@ -223,4 +223,62 @@ a {
   transition: 2s;
   transform: rotate(-5deg);
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 5px;
+    padding: 0;
+  }
+  body .header {
+    width: 100%;
+    height: 100% !important;
+  }
+  body .header #nav-bar {
+    width: 100%;
+  }
+  body .header #nav-bar #nav-item {
+    font-size: 1px !important;
+    padding: 0;
+    margin: 0;
+  }
+  body .inp button {
+    transform: translate(1px, 1px);
+  }
+}
+.nav-bar {
+  font-size: 5px;
+}
+
+.video iframe {
+  width: 300px;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 5px;
+    padding: 0;
+  }
+  body .header {
+    height: 100% !important;
+  }
+  body .header #nav-bar {
+    width: 100%;
+  }
+  body .header #nav-bar #nav-item {
+    font-size: 1px !important;
+    padding: 0;
+    margin: 0;
+  }
+}
+.inp button {
+  transform: translate(10px, 1px);
+}
+
+.nav-bar {
+  font-size: 1px;
+}
+
+.video iframe {
+  width: 300px;
 }/*# sourceMappingURL=header.css.map */
